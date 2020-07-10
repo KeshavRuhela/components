@@ -1,0 +1,20 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.as-one-progress-bar__bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+}
+
+.as-one-progress-bar__percent {
+  position: fixed;
+  bottom: 5px;
+  right: 27px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+/*# sourceMappingURL=scroll-progress-bar.css.map */
