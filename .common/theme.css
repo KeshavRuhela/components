@@ -21,6 +21,10 @@
   background-color: black;
 }
 
+.bg_dark-gray {
+  background-color: #131313;
+}
+
 .bg_linear-blue {
   background: -webkit-gradient(linear, left top, right top, from(#0162c8), to(#55e7fc));
   background: linear-gradient(90deg, #0162c8, #55e7fc);
