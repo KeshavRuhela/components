@@ -1,1 +1,3 @@
-# component__effects
+# component\_\_effects
+
+element > effect > action
