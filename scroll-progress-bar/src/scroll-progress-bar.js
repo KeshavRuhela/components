@@ -1,6 +1,6 @@
 function asOneProgressBar() {
 
-  let progressBar = document.querySelector('.as-one__progress-bar');
+  let progressBar = document.querySelector('.as-one-progress-bar');
 
   window.onscroll = () => {
     let viewportHeight = document.body.scrollHeight - window.innerHeight;
