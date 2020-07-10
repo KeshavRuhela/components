@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600,800&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 992px 1fr;
+  min-height: 200vh;
+
+  & > section {
+    margin-top: 100vh;
+    margin-bottom: 100vh;
+    grid-column: 2 / 3;
+  }
+}
+
+.as-one-parallax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  border: 10px solid white;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    z-index: 10000;
+  }
+  &::before {
+    bottom: 0;
+    height: 100px;
+    background: linear-gradient(to top, black, transparent);
+  }
+  &::after {
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: black;
+    mix-blend-mode: color;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  .road {
+    z-index: 2;
+  }
+  .mountain {
+    z-index: 2;
+  }
+
+  &__title {
+    position: absolute;
+    color: #fff;
+    font-size: 9em;
+    z-index: 1;
+    top: 140px;
+  }
+}
