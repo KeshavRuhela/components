@@ -14,8 +14,8 @@
     background-color: black;
   }
   &_rainbow {
-    background: linear-gradient(to top, #008aff, #00ffe7);
     animation: rainbow 5s linear infinite;
+    background: linear-gradient(to top, #008aff, #00ffe7);
 
     &-radial {
       background: radial-gradient(#008aff, #00ffe7);
