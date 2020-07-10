@@ -3,21 +3,17 @@
 }
 
 .as-one__scroll-bar ::-webkit-scrollbar-track {
+  background: gray;
   -webkit-box-shadow: inset 0 0 5px gray;
           box-shadow: inset 0 0 5px gray;
-  border-radius: 100px;
 }
 
 .as-one__scroll-bar ::-webkit-scrollbar-thumb {
-  background: blue;
-  -webkit-box-shadow: 0 0 5px blue;
-          box-shadow: 0 0 5px blue;
   border-radius: 100px;
+  background: white;
 }
 
 .as-one__scroll-bar ::-webkit-scrollbar-thumb:hover {
-  background: blueviolet;
-  -webkit-box-shadow: 0 0 5px blueviolet;
-          box-shadow: 0 0 5px blueviolet;
+  background: blue;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=scroll-bar.css.map */
