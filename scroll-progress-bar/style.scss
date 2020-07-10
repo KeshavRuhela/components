@@ -7,33 +7,4 @@
   top: 0;
   right: 0;
   width: 10px;
-  background: linear-gradient(to top, #008aff, #00ffe7);
-  animation: as-one__progress-bar 5s linear infinite;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    background: inherit;
-  }
-  &::before {
-    filter: blur(30px);
-  }
-  &::after {
-    filter: blur(10px);
-  }
-}
-
-@keyframes as-one__progress-bar {
-  0%,
-  100% {
-    filter: hue-rotate(0deg);
-  }
-  50% {
-    filter: hue-rotate(360deg);
-  }
 }
