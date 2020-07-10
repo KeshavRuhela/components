@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600,800&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.as-one-card-hover-options {
+  position: relative;
+  overflow: hidden;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+}
+
+.as-one-card-hover-options:hover::before {
+  -webkit-clip-path: circle(300px at 80% -20%);
+          clip-path: circle(300px at 80% -20%);
+}
+
+.as-one-card-hover-options::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9bdc28;
+  -webkit-clip-path: circle(150px at 80% 20%);
+          clip-path: circle(150px at 80% 20%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.as-one-card-hover-options::after {
+  content: attr(data-name);
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+.as-one-card-hover-options:hover .img-box {
+  top: 0%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.as-one-card-hover-options:hover .img-box img {
+  top: 50%;
+}
+
+.as-one-card-hover-options:hover .content-box {
+  height: 210px;
+}
+
+.as-one-card-hover-options:hover .content-box .size,
+.as-one-card-hover-options:hover .content-box .color {
+  opacity: 1;
+  visibility: visible;
+}
+
+.as-one-card-hover-options:hover .content-box .size {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.as-one-card-hover-options:hover .content-box .color {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.as-one-card-hover-options:hover .content-box .button {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.as-one-card-hover-options .img-box {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.as-one-card-hover-options .img-box img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 270px;
+  -webkit-transform: translate(-50%, -50%) rotate(-25deg);
+          transform: translate(-50%, -50%) rotate(-25deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.as-one-card-hover-options .content-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  z-index: 10;
+}
+
+.as-one-card-hover-options .content-box h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.as-one-card-hover-options .content-box .size,
+.as-one-card-hover-options .content-box .color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.as-one-card-hover-options .content-box .size h3,
+.as-one-card-hover-options .content-box .color h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.as-one-card-hover-options .content-box .size span,
+.as-one-card-hover-options .content-box .color span {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin: 0 5px;
+  background: #fff;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  color: #111;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.as-one-card-hover-options .content-box .size span:hover,
+.as-one-card-hover-options .content-box .color span:hover {
+  background: #9bdc28;
+}
+
+.as-one-card-hover-options .content-box .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.as-one-card-hover-options .content-box .color span:nth-child(2) {
+  background: #9bdc28;
+}
+
+.as-one-card-hover-options .content-box .color span:nth-child(3) {
+  background: #03a9f4;
+}
+
+.as-one-card-hover-options .content-box .color span:nth-child(4) {
+  background: #e91e63;
+}
+
+.as-one-card-hover-options .content-box .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=style.css.map */
