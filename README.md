@@ -1,3 +1,3 @@
 # component\_\_effects
 
-element > effect > action
+Folder naming: ./element\_\_effect_action
