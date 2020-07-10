@@ -1,0 +1,60 @@
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Theme
+.theme {
+  $theme: &;
+
+  &_light {
+    background: white;
+    #{$theme}__element {
+      background: black;
+    }
+  }
+  &_dark {
+    background-color: black;
+
+    #{$theme}__element {
+      background: white;
+    }
+  }
+  &_rainbow {
+    background-color: black;
+
+    #{$theme}__element {
+      background: linear-gradient(to top, #008aff, #00ffe7);
+      animation: as-one__progress-bar 5s linear infinite;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+      }
+      &::before {
+        filter: blur(30px);
+      }
+      &::after {
+        filter: blur(10px);
+      }
+    }
+  }
+}
+
+@keyframes as-one__progress-bar {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
