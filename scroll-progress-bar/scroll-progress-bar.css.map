@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAClB,KAAK,EAAE,CAAC;CACT;;AAED,AAAA,qBAAqB,CAAC;EACpB,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,CAAC;EACN,KAAK,EAAE,CAAC;EACR,KAAK,EAAE,IAAI;CACZ",
     "sources": [
-        "style.scss"
+        "scroll-progress-bar.scss"
     ],
     "names": [],
-    "file": "style.css"
+    "file": "scroll-progress-bar.css"
 }
