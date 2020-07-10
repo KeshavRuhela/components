@@ -5,34 +5,26 @@
           box-sizing: border-box;
 }
 
-.theme_light {
+.bg_light {
   background: white;
 }
 
-.theme_light .theme__element {
-  background: black;
-}
-
-.theme_dark {
+.bg_dark {
   background-color: black;
 }
 
-.theme_dark .theme__element {
-  background: white;
-}
-
-.theme_rainbow {
-  background-color: black;
-}
-
-.theme_rainbow .theme__element {
+.bg_rainbow {
   background: -webkit-gradient(linear, left bottom, left top, from(#008aff), to(#00ffe7));
   background: linear-gradient(to top, #008aff, #00ffe7);
-  -webkit-animation: as-one__progress-bar 5s linear infinite;
-          animation: as-one__progress-bar 5s linear infinite;
+  -webkit-animation: rainbow 5s linear infinite;
+          animation: rainbow 5s linear infinite;
 }
 
-.theme_rainbow .theme__element::before, .theme_rainbow .theme__element::after {
+.bg_rainbow-radial {
+  background: radial-gradient(#008aff, #00ffe7);
+}
+
+.bg_rainbow::before, .bg_rainbow::after {
   content: '';
   position: absolute;
   top: 0;
@@ -42,17 +34,17 @@
   background: inherit;
 }
 
-.theme_rainbow .theme__element::before {
+.bg_rainbow::before {
   -webkit-filter: blur(30px);
           filter: blur(30px);
 }
 
-.theme_rainbow .theme__element::after {
+.bg_rainbow::after {
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
 
-@-webkit-keyframes as-one__progress-bar {
+@-webkit-keyframes rainbow {
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
@@ -64,7 +56,7 @@
   }
 }
 
-@keyframes as-one__progress-bar {
+@keyframes rainbow {
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
@@ -75,4 +67,4 @@
             filter: hue-rotate(360deg);
   }
 }
-/*# sourceMappingURL=theme.css.map */
+/*# sourceMappingURL=bg.css.map */
