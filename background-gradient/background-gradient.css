@@ -1,8 +1,8 @@
 .as-one__background-gradient {
   width: 100vw;
   height: 100vh;
-  -webkit-animation: as-one__progress-bar 60s infinite;
-          animation: as-one__progress-bar 60s infinite;
+  -webkit-animation: gradient 60s infinite;
+          animation: gradient 60s infinite;
 }
 
 .as-one__background-gradient_linear {
@@ -14,7 +14,7 @@
   background: radial-gradient(#008aff, #00ffe7);
 }
 
-@-webkit-keyframes as-one__progress-bar {
+@-webkit-keyframes gradient {
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
@@ -26,7 +26,7 @@
   }
 }
 
-@keyframes as-one__progress-bar {
+@keyframes gradient {
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
@@ -37,4 +37,4 @@
             filter: hue-rotate(360deg);
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=background-gradient.css.map */
