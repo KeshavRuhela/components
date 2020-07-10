@@ -2,7 +2,15 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.color_light {
+  color: white;
+}
+
+.color_dark {
+  color: black;
 }
 
 .bg_light {
@@ -15,7 +23,7 @@
 
 .bg_rainbow {
   -webkit-animation: rainbow 5s linear infinite;
-          animation: rainbow 5s linear infinite;
+  animation: rainbow 5s linear infinite;
   background: -webkit-gradient(linear, left bottom, left top, from(#008aff), to(#00ffe7));
   background: linear-gradient(to top, #008aff, #00ffe7);
 }
@@ -24,7 +32,8 @@
   background: radial-gradient(#008aff, #00ffe7);
 }
 
-.bg_rainbow::before, .bg_rainbow::after {
+.bg_rainbow::before,
+.bg_rainbow::after {
   content: '';
   position: absolute;
   top: 0;
@@ -36,23 +45,23 @@
 
 .bg_rainbow::before {
   -webkit-filter: blur(30px);
-          filter: blur(30px);
+  filter: blur(30px);
 }
 
 .bg_rainbow::after {
   -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
 }
 
 @-webkit-keyframes rainbow {
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
   }
   50% {
     -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
   }
 }
 
@@ -60,11 +69,11 @@
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
   }
   50% {
     -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
   }
 }
-/*# sourceMappingURL=bg.css.map */
+/*# sourceMappingURL=theme.css.map */

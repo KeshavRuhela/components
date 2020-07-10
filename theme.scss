@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.color {
+  &_light {
+    color: white;
+  }
+  &_dark {
+    color: black;
+  }
+}
+
 .bg {
   $bg: &;
 
