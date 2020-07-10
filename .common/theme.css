@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .color_light {
@@ -21,9 +21,19 @@
   background-color: black;
 }
 
+.bg_linear-blue {
+  background: -webkit-gradient(linear, left top, right top, from(#0162c8), to(#55e7fc));
+  background: linear-gradient(90deg, #0162c8, #55e7fc);
+}
+
+.bg_linear-violet {
+  background: -webkit-gradient(linear, left top, right top, from(#755bea), to(#ff72c0));
+  background: linear-gradient(90deg, #755bea, #ff72c0);
+}
+
 .bg_rainbow {
   -webkit-animation: rainbow 5s linear infinite;
-  animation: rainbow 5s linear infinite;
+          animation: rainbow 5s linear infinite;
   background: -webkit-gradient(linear, left bottom, left top, from(#008aff), to(#00ffe7));
   background: linear-gradient(to top, #008aff, #00ffe7);
 }
@@ -32,8 +42,7 @@
   background: radial-gradient(#008aff, #00ffe7);
 }
 
-.bg_rainbow::before,
-.bg_rainbow::after {
+.bg_rainbow-blur::before, .bg_rainbow-blur::after {
   content: '';
   position: absolute;
   top: 0;
@@ -43,25 +52,25 @@
   background: inherit;
 }
 
-.bg_rainbow::before {
+.bg_rainbow-blur::before {
   -webkit-filter: blur(30px);
-  filter: blur(30px);
+          filter: blur(30px);
 }
 
-.bg_rainbow::after {
+.bg_rainbow-blur::after {
   -webkit-filter: blur(10px);
-  filter: blur(10px);
+          filter: blur(10px);
 }
 
 @-webkit-keyframes rainbow {
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
-    filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
   }
   50% {
     -webkit-filter: hue-rotate(360deg);
-    filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
   }
 }
 
@@ -69,11 +78,11 @@
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
-    filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
   }
   50% {
     -webkit-filter: hue-rotate(360deg);
-    filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
   }
 }
-/*# sourceMappingURL=.common/theme.css.map */
+/*# sourceMappingURL=theme.css.map */
