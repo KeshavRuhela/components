@@ -1,0 +1,23 @@
+.as-one__scroll-bar ::-webkit-scrollbar {
+  width: 20px;
+}
+
+.as-one__scroll-bar ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px gray;
+          box-shadow: inset 0 0 5px gray;
+  border-radius: 100px;
+}
+
+.as-one__scroll-bar ::-webkit-scrollbar-thumb {
+  background: blue;
+  -webkit-box-shadow: 0 0 5px blue;
+          box-shadow: 0 0 5px blue;
+  border-radius: 100px;
+}
+
+.as-one__scroll-bar ::-webkit-scrollbar-thumb:hover {
+  background: blueviolet;
+  -webkit-box-shadow: 0 0 5px blueviolet;
+          box-shadow: 0 0 5px blueviolet;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+.as-one__scroll-bar {
+  $width: 10px;
+  $borderRadius: 100px;
+  $boxTrackBoxShadow: unset;
+  $boxTrackBackground: unset;
+  $boxThumbBoxShadow: unset;
+  $boxThumbBackground: gray;
+  $boxThumbHoverBackground: black;
+  $boxThumbHoverBoxShadow: unset;
+
+  &_gray-blue {
+    $width: 20px;
+    $borderRadius: 100px;
+    $boxTrackBoxShadow: inset 0 0 5px gray;
+    $boxTrackBackground: 0;
+    $boxThumbBoxShadow: 0 0 5px blue;
+    $boxThumbBackground: blue;
+    $boxThumbHoverBackground: blueviolet;
+    $boxThumbHoverBoxShadow: 0 0 5px blueviolet;
+  }
+
+  ::-webkit-scrollbar {
+    width: $width;
+
+    // Track
+    &-track {
+      box-shadow: $boxTrackBoxShadow;
+      border-radius: $borderRadius;
+    }
+
+    // Handle
+    &-thumb {
+      background: $boxThumbBackground;
+      box-shadow: $boxThumbBoxShadow;
+      border-radius: $borderRadius;
+
+      &:hover {
+        background: $boxThumbHoverBackground;
+        box-shadow: $boxThumbHoverBoxShadow;
+      }
+    }
+  }
+}
