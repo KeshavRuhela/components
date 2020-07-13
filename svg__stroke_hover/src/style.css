@@ -1,1 +1,175 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #06181f;
+}
+
+.as-one-stroke {
+  position: relative;
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.as-one-stroke__icon {
+  width: 200px;
+}
+
+.as-one-stroke__icon path {
+  fill: transparent;
+  stroke-width: 10;
+  stroke: #31e8ff;
+}
+
+.as-one-stroke__icon_heart path {
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
+}
+
+.as-one-stroke__icon_heart:hover path {
+  -webkit-animation: animate-heart 2s linear forwards;
+          animation: animate-heart 2s linear forwards;
+}
+
+.as-one-stroke__icon_star path {
+  stroke-dasharray: 1810;
+  stroke-dashoffset: 0;
+}
+
+.as-one-stroke__icon_star:hover path {
+  -webkit-animation: animate-star 2s linear forwards;
+          animation: animate-star 2s linear forwards;
+}
+
+.as-one-stroke__icon_moon path {
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
+}
+
+.as-one-stroke__icon_moon:hover path {
+  -webkit-animation: animate-moon 2s linear forwards;
+          animation: animate-moon 2s linear forwards;
+}
+
+@-webkit-keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3120;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3120;
+    fill: #31e8ff;
+  }
+}
+
+@keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3120;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3120;
+    fill: #31e8ff;
+  }
+}
+
+@-webkit-keyframes animate-star {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1810;
+  }
+  80% {
+    stroke-dashoffset: 3620;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3620;
+    fill: #31e8ff;
+  }
+}
+
+@keyframes animate-star {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1810;
+  }
+  80% {
+    stroke-dashoffset: 3620;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3620;
+    fill: #31e8ff;
+  }
+}
+
+@-webkit-keyframes animate-moon {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3120;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3120;
+    fill: #31e8ff;
+  }
+}
+
+@keyframes animate-moon {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3120;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3120;
+    fill: #31e8ff;
+  }
+}
+/*# sourceMappingURL=style.css.map */
