@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+}
+.as-one-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 1200px;
+  box-sizing: border-box;
+
+  &__box:hover {
+    background: #ff0057;
+  }
+
+  &__box {
+    position: relative;
+    padding: 80px 40px 40px;
+    margin-top: 80px;
+    transition: 0.5s;
+    text-align: center;
+    background: #fff;
+
+    &_image {
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 40px;
+      width: 80px;
+      height: 80px;
+      background: url(../icon-quotes.svg);
+      background-size: cover;
+      opacity: 0.05;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+
+    &:hover::before {
+      opacity: 1;
+      transform: translateY(-60px);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+      width: 80px;
+      height: 80px;
+      background: url(../icon-quotes.svg);
+      background-size: cover;
+      opacity: 0.05;
+      pointer-events: none;
+      transition: 0.5s;
+      transform: rotate(180deg) translateY(0px);
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transform: rotate(180deg) translateY(-60px);
+    }
+
+    &:hover &_paragraph,
+    &:hover &_title,
+    &:hover &_role {
+      color: #fff;
+    }
+
+    &_paragraph {
+      margin: 0;
+      padding: 0;
+      transition: 0.5s;
+    }
+
+    &_title {
+      margin: 20px 0 0;
+      padding: 0;
+      transition: 0.5s;
+      font-weight: 700;
+      line-height: 20px;
+      color: #ff0057;
+      text-transform: uppercase;
+    }
+
+    &_role {
+      font-weight: 600;
+      font-size: 14px;
+      color: #c5c5c5;
+      transition: 0.5s;
+    }
+  }
+}
