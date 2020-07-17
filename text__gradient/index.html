@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../.common/theme.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        background: hsl(204 100% 5%);
+        font-family: sans-serif;
+        font-size: min(200%, 5vmin);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="as-one-text-gradient">
+      <h1>Gradient Text</h1>
+      <p>Ruleset in parent</p>
+    </div>
+
+    <h1 class="as-one-text-gradient">Ruleset in self</h1>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>
