@@ -43,7 +43,7 @@ body {
   background: #fff;
 }
 
-.as-one-card__box_image {
+.as-one-card__box-image {
   position: absolute;
   top: -60px;
   left: 50%;
@@ -99,20 +99,20 @@ body {
           transform: rotate(180deg) translateY(-60px);
 }
 
-.as-one-card__box:hover .as-one-card__box_paragraph,
-.as-one-card__box:hover .as-one-card__box_title,
-.as-one-card__box:hover .as-one-card__box_role {
+.as-one-card__box:hover .as-one-card__box-paragraph,
+.as-one-card__box:hover .as-one-card__box-title,
+.as-one-card__box:hover .as-one-card__box-role {
   color: #fff;
 }
 
-.as-one-card__box_paragraph {
+.as-one-card__box-paragraph {
   margin: 0;
   padding: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.as-one-card__box_title {
+.as-one-card__box-title {
   margin: 20px 0 0;
   padding: 0;
   -webkit-transition: 0.5s;
@@ -123,7 +123,7 @@ body {
   text-transform: uppercase;
 }
 
-.as-one-card__box_role {
+.as-one-card__box-role {
   font-weight: 600;
   font-size: 14px;
   color: #c5c5c5;

@@ -31,7 +31,7 @@ body {
     text-align: center;
     background: #fff;
 
-    &_image {
+    &-image {
       position: absolute;
       top: -60px;
       left: 50%;
@@ -82,19 +82,19 @@ body {
       transform: rotate(180deg) translateY(-60px);
     }
 
-    &:hover &_paragraph,
-    &:hover &_title,
-    &:hover &_role {
+    &:hover &-paragraph,
+    &:hover &-title,
+    &:hover &-role {
       color: #fff;
     }
 
-    &_paragraph {
+    &-paragraph {
       margin: 0;
       padding: 0;
       transition: 0.5s;
     }
 
-    &_title {
+    &-title {
       margin: 20px 0 0;
       padding: 0;
       transition: 0.5s;
@@ -104,7 +104,7 @@ body {
       text-transform: uppercase;
     }
 
-    &_role {
+    &-role {
       font-weight: 600;
       font-size: 14px;
       color: #c5c5c5;
