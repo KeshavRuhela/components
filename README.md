@@ -29,18 +29,14 @@ Or, using the component effects vocabulary:
 | Elements            |     |
 | ------------------- | --- |
 | button              | 1   |
-| card                | 3   |
+| card                | 4   |
+| cursor              | 3   |
+| form-login          | 1   |
+| scroll              | 2   |
 | scroll-progress-bar | 2   |
 | scrollbar           | 1   |
-| section             | 2   |
+| section             | 3   |
 | svg                 | 1   |
 | text                | 1   |
 
-| Actions    |     |
-| ---------- | --- |
-| click      | 1   |
-| hover      | 5   |
-| scroll     | 3   |
-| none/other | 2   |
-
-Total: 11
+Total: 19
