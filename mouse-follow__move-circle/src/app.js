@@ -1,38 +1,46 @@
-let $ = document.querySelector.bind(document);
-let $on = document.addEventListener.bind(document);
+let ball = document.querySelector('.as-one-wrap__ball');
 
-let xmouse, ymouse;
-$on('mousemove', function (e) {
-  xmouse = e.clientX || e.pageX;
-  ymouse = e.clientY || e.pageY;
-});
+let xMouse, yMouse;
 
-let ball = $('.as-one-wrap__ball');
-let x = void 0,
-    y = void 0,
-    dx = void 0,
-    dy = void 0,
+let x = 0,
+    y = 0,
+    dx = 0,
+    dy = 0,
     tx = 0,
     ty = 0,
     key = -1;
 
-  let followMouse = function followMouse() {
-    key = requestAnimationFrame(followMouse);
+document.addEventListener('mousemove', function (e) {
+  xMouse = e.clientX || e.pageX;
+  yMouse = e.clientY || e.pageY;
+})
 
-    if(!x || !y) {
-        x = xmouse;
-        y = ymouse;
+let followMouse = function() {
+
+  key = requestAnimationFrame(followMouse);
+
+  if (!x || !y) {
+    x = xMouse;
+    y = yMouse;
+
+  } else {
+    dx = (xMouse - x) * 0.125;
+    dy = (yMouse - y) * 0.125;
+
+    if (Math.abs(dx) + Math.abs(dy) < 0.1) {
+      x = xMouse;
+      y = yMouse;
+
     } else {
-        dx = (xmouse - x) * 0.125;
-        dy = (ymouse - y) * 0.125;
-        if(Math.abs(dx) + Math.abs(dy) < 0.1) {
-            x = xmouse;
-            y = ymouse;
-        } else {
-            x += dx;
-            y += dy;
-        }
+      x += dx;
+      y += dy;
     }
-    ball.style.left = x + 'px';
-    ball.style.top = y + 'px';
-  };
+  }
+
+  // Center
+  x = x - 2;
+  y = y - 2;
+
+  ball.style.left = x + 'px';
+  ball.style.top = y + 'px';
+};
