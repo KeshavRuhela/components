@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.as-one {
+  height: 100vh;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.as-one-nav {
+  background-color: black;
+  opacity: .8;
+}
+
+.as-one-nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.as-one-nav-menu-li {
+  float: left;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.as-one-nav-menu-li-anchor {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  height: 60px;
+}
+
+.as-one-nav-menu-li-anchor:hover {
+  background-color: #de71e2;
+}
+
+.as-one-nav-menu-li:hover .as-one-nav-menu-li-submenu {
+  visibility: visible;
+}
+
+.as-one-nav-menu-li-submenu {
+  visibility: hidden;
+  list-style: none;
+  background-color: black;
+  opacity: .8;
+}
+
+.as-one-nav-menu-li-submenu-li-anchor {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.as-one-nav-menu-li-submenu-li-anchor:hover {
+  background-color: #de71e2;
+}
+/*# sourceMappingURL=style.css.map */
