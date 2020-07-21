@@ -1,0 +1,23 @@
+{
+  "name": "components__effects",
+  "version": "1.0.0",
+  "description": "## Folder naming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/as-one/components__effects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/as-one/components__effects/issues"
+  },
+  "homepage": "https://github.com/as-one/components__effects#readme",
+  "dependencies": {
+    "@as-one/components__structure": "github:as-one/components__structure"
+  }
+}
