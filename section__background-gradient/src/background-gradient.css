@@ -1,16 +1,16 @@
-.as-one-background-gradient {
+.ao-background-gradient {
   width: 100vw;
   height: 100vh;
   -webkit-animation: gradient 60s infinite;
-          animation: gradient 60s infinite;
+  animation: gradient 60s infinite;
 }
 
-.as-one-background-gradient_linear {
+.ao-background-gradient_linear {
   background: -webkit-gradient(linear, left bottom, left top, from(#008aff), to(#00ffe7));
   background: linear-gradient(to top, #008aff, #00ffe7);
 }
 
-.as-one-background-gradient_radial {
+.ao-background-gradient_radial {
   background: radial-gradient(#008aff, #00ffe7);
 }
 
@@ -18,11 +18,11 @@
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
   }
   50% {
     -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
   }
 }
 
@@ -30,11 +30,11 @@
   0%,
   100% {
     -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
   }
   50% {
     -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
   }
 }
 /*# sourceMappingURL=background-gradient.css.map */

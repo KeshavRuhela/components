@@ -1,7 +1,7 @@
 function asOneProgressBar() {
 
-  let progressBar = document.querySelector('.as-one-progress-bar__bar');
-  let percent = document.querySelector('.as-one-progress-bar__percent');
+  let progressBar = document.querySelector('.ao-progress-bar__bar');
+  let percent = document.querySelector('.ao-progress-bar__percent');
 
   window.onscroll = () => {
     let viewportHeight = document.body.scrollHeight - window.innerHeight;

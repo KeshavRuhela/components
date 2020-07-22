@@ -9,7 +9,7 @@ body {
   min-height: 100vh;
   background: #06181f;
 }
-.as-one-stroke {
+.ao-stroke {
   position: relative;
   width: 800px;
   display: flex;
@@ -41,7 +41,7 @@ body {
         stroke-dasharray: 1810;
         stroke-dashoffset: 0;
       }
-  
+
       &:hover path {
         animation: animate-star 2s linear forwards;
       }
@@ -52,7 +52,7 @@ body {
         stroke-dasharray: 1560;
         stroke-dashoffset: 0;
       }
-  
+
       &:hover path {
         animation: animate-moon 2s linear forwards;
       }
@@ -71,7 +71,7 @@ body {
     }
     100% {
       stroke-dashoffset: 3120;
-      fill: #31e8ff
+      fill: #31e8ff;
     }
   }
 
@@ -88,7 +88,7 @@ body {
     }
     100% {
       stroke-dashoffset: 3620;
-      fill: #31e8ff
+      fill: #31e8ff;
     }
   }
 
@@ -105,7 +105,7 @@ body {
     }
     100% {
       stroke-dashoffset: 3120;
-      fill: #31e8ff
+      fill: #31e8ff;
     }
   }
 }

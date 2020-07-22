@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
-.as-one-section-card {
+.ao-section-card {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,11 +17,11 @@
   border: 2px solid #000;
 }
 
-.as-one-section-card-slide {
+.ao-section-card-slide {
   position: relative;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background: #0f0;
   height: 100%;
   border-right: 2px solid #000;
@@ -30,52 +30,52 @@
   transition: 0.5s ease-in-out;
 }
 
-.as-one-section-card-slide:last-child {
+.ao-section-card-slide:last-child {
   border-right: none;
 }
 
-.as-one-section-card-slide:nth-child(1) {
+.ao-section-card-slide:nth-child(1) {
   background: url(./image1.jpg);
   background-position: center center;
   background-size: cover;
 }
 
-.as-one-section-card-slide:nth-child(2) {
+.ao-section-card-slide:nth-child(2) {
   background: url(./image2.jpg);
   background-position: center center;
   background-size: cover;
 }
 
-.as-one-section-card-slide:nth-child(3) {
+.ao-section-card-slide:nth-child(3) {
   background: url(./image3.jpg);
   background-position: center center;
   background-size: cover;
 }
 
-.as-one-section-card-slide:nth-child(4) {
+.ao-section-card-slide:nth-child(4) {
   background: url(./image4.jpg);
   background-position: center center;
   background-size: cover;
 }
 
-.as-one-section-card-slide:hover {
+.ao-section-card-slide:hover {
   -webkit-box-flex: 4;
-      -ms-flex-positive: 4;
-          flex-grow: 4;
+  -ms-flex-positive: 4;
+  flex-grow: 4;
 }
 
-.as-one-section-card-slide:hover .as-one-section-card-slide__content {
+.ao-section-card-slide:hover .ao-section-card-slide__content {
   visibility: visible;
   opacity: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  transition-delay: 0.5s;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
-.as-one-section-card-slide__content {
+.ao-section-card-slide__content {
   position: absolute;
   bottom: 0;
   padding: 30px;
@@ -87,6 +87,6 @@
   -webkit-transition: 0s;
   transition: 0s;
   -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  transform: translateY(100px);
 }
 /*# sourceMappingURL=style.css.map */

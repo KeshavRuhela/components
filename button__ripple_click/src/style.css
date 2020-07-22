@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
-.as-one-button {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+.ao-button {
   position: relative;
   overflow: hidden;
   padding: 15px 50px;
@@ -11,18 +11,18 @@
   color: white;
 }
 
-.as-one-button span {
+.ao-button span {
   position: absolute;
   background-color: #fff;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   pointer-events: none;
   border-radius: 50%;
-  -webkit-animation: as-one-button-span 1s linear infinite;
-          animation: as-one-button-span 1s linear infinite;
+  -webkit-animation: ao-button-span 1s linear infinite;
+  animation: ao-button-span 1s linear infinite;
 }
 
-@-webkit-keyframes as-one-button-span {
+@-webkit-keyframes ao-button-span {
   0% {
     width: 0px;
     height: 0px;
@@ -35,7 +35,7 @@
   }
 }
 
-@keyframes as-one-button-span {
+@keyframes ao-button-span {
   0% {
     width: 0px;
     height: 0px;

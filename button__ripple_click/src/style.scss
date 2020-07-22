@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-.as-one-button {
+.ao-button {
   position: relative;
   overflow: hidden;
   padding: 15px 50px;
@@ -17,11 +17,11 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     border-radius: 50%;
-    animation: as-one-button-span 1s linear infinite;
+    animation: ao-button-span 1s linear infinite;
   }
 }
 
-@keyframes as-one-button-span {
+@keyframes ao-button-span {
   0% {
     width: 0px;
     height: 0px;

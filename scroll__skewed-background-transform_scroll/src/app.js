@@ -1,4 +1,4 @@
-let skewed = document.querySelector('.as-one-scroll__skewed');
+let skewed = document.querySelector('.ao-scroll__skewed');
 
 window.addEventListener('scroll', function() {
   let value = -10 + window.scrollY / 60;

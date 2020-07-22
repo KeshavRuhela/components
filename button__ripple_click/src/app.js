@@ -1,5 +1,5 @@
 function asOneButtonRipple() {
-  let buttons = document.querySelectorAll('.as-one-button');
+  let buttons = document.querySelectorAll('.ao-button');
   buttons.forEach(button => {
     button.addEventListener('click', (e) => {
       let x = e.clientX - e.target.offsetLeft;

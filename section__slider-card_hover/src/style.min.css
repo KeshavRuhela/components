@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.ao-section-card {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  border: 2px solid #000;
+}
+.ao-section-card-slide {
+  position: relative;
+  flex: 1;
+  background: #0f0;
+  height: 100%;
+  border-right: 2px solid #000;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.ao-section-card-slide:last-child {
+  border-right: none;
+}
+.ao-section-card-slide:nth-child(1) {
+  background: url(./image1.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.ao-section-card-slide:nth-child(2) {
+  background: url(./image2.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.ao-section-card-slide:nth-child(3) {
+  background: url(./image3.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.ao-section-card-slide:nth-child(4) {
+  background: url(./image4.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.ao-section-card-slide:hover {
+  flex-grow: 4;
+}
+.ao-section-card-slide:hover .ao-section-card-slide__content {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  transform: translateY(0);
+}
+.ao-section-card-slide__content {
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  margin: 40px;
+  background: #000;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0s;
+  transform: translateY(100px);
+}
+/*# sourceMappingURL=style.min.css.map */

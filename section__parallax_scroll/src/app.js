@@ -3,7 +3,7 @@ function asOneParallax() {
   let moon = document.querySelector('.moon');
   let mountain = document.querySelector('.mountain');
   let road = document.querySelector('.road');
-  let title = document.querySelector('.as-one-parallax__title');
+  let title = document.querySelector('.ao-parallax__title');
 
   window.addEventListener('scroll', (e) => {
     let value = window.scrollY;

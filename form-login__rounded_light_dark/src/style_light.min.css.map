@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,kBAAI,CAEZ,AAAA,KAAK,AAAC,CACJ,SAAS,CAAA,QAAC,CACV,YAAY,CAAA,QAAC,CACb,YAAY,CAAA,QAAC,CACb,kBAAkB,CAAA,KAAC,CACnB,aAAa,CAAA,QAAC,CACd,cAAc,CAAA,yEAAC,CACf,cAAc,CAAA,iFAAC,CACf,gBAAgB,CAAA,qEAAC,CAClB",
+    "sources": [
+        "style_light.scss"
+    ],
+    "names": [],
+    "file": "style_light.min.css"
+}

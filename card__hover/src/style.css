@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -12,31 +12,31 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 100vh;
   background-color: #ebf5fc;
 }
 
-.as-one-container {
+.ao-container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 1100px;
 }
 
-.as-one-container__card {
+.ao-container__card {
   position: relative;
   text-align: center;
   margin: 20px;
@@ -45,41 +45,43 @@ body {
   background-color: #ebf5fc;
   border-radius: 40px;
   -webkit-box-shadow: -6px -6px 20px white, 6px 6px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: -6px -6px 20px white, 6px 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: -6px -6px 20px white, 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-.as-one-container__card:hover {
+.ao-container__card:hover {
   -webkit-box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.5), 6px 6px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.5), 6px 6px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.5), 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
 
-.as-one-container__card:hover .as-one-container__card-image,
-.as-one-container__card:hover .as-one-container__card-content {
+.ao-container__card:hover .ao-container__card-image,
+.ao-container__card:hover .ao-container__card-content {
   -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
-.as-one-container__card-image {
+.ao-container__card-image {
   max-width: 120px;
 }
 
-.as-one-container__card-content {
+.ao-container__card-content {
   position: relative;
   margin-top: 20px;
   text-align: center;
 }
 
-.as-one-container__card-content-title, .as-one-container__card-content-paragraph, .as-one-container__card-content-link {
+.ao-container__card-content-title,
+.ao-container__card-content-paragraph,
+.ao-container__card-content-link {
   color: #32a3b1;
 }
 
-.as-one-container__card-content-title {
+.ao-container__card-content-title {
   font-weight: 700;
   font-size: 1.4em;
   letter-spacing: 2px;
 }
 
-.as-one-container__card-content-link {
+.ao-container__card-content-link {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
@@ -87,17 +89,17 @@ body {
   font-size: 16px;
   text-decoration: none;
   -webkit-box-shadow: -4px -4px 15px white, 4px 4px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: -4px -4px 15px white, 4px 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: -4px -4px 15px white, 4px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.as-one-container__card-content-link:hover {
+.ao-container__card-content-link:hover {
   -webkit-box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.as-one-container__card-content-link:hover span {
+.ao-container__card-content-link:hover span {
   display: block;
   -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 /*# sourceMappingURL=style.css.map */

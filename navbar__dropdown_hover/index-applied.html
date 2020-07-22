@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav-bar DropDown Menu</title>
+    <link rel="stylesheet" href="../node_modules/@as-one/components__structure/dist/simple/grid/grid.min.css" />
+    <link rel="stylesheet" href="../.common/theme.css" />
+    <link rel="stylesheet" href="./src/style.min.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;
+      }
+      header {
+        height: 100vh;
+        background-image: url(./src/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+      nav {
+        background-color: black;
+        opacity: 0.8;
+      }
+      .ao-navbar-menu {
+        list-style: none;
+      }
+      .ao-navbar-menu-li {
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px;
+      }
+      .ao-navbar-menu-li-anchor {
+        text-decoration: none;
+        color: #fff;
+        height: 60px;
+      }
+      .ao-navbar-menu-li-anchor:hover {
+        background-color: rgb(222, 113, 226);
+      }
+      .ao-navbar-menu-li-submenu {
+        background-color: black;
+        opacity: 0.8;
+      }
+      .ao-navbar-menu-li-submenu-li-anchor {
+        text-decoration: none;
+        color: #fff;
+      }
+      .ao-navbar-menu-li-submenu-li-anchor:hover {
+        background-color: rgb(222, 113, 226);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="ao-navbar container-fluid">
+        <div class="container">
+          <ul class="ao-navbar-menu">
+            <li class="ao-navbar-menu-li"><a class="ao-navbar-menu-li-anchor" href="#">Home</a></li>
+            <li class="ao-navbar-menu-li">
+              <a class="ao-navbar-menu-li-anchor" href="#">Media</a>
+              <ul class="ao-navbar-menu-li-submenu">
+                <li class="ao-navbar-menu-li-submenu-li">
+                  <a class="ao-navbar-menu-li-submenu-li-anchor" href="#">Print Media</a>
+                </li>
+                <li class="ao-navbar-menu-li-submenu-li">
+                  <a class="ao-navbar-menu-li-submenu-li-anchor" href="#">Electronic Media</a>
+                </li>
+                <li class="ao-navbar-menu-li-submenu-li">
+                  <a class="ao-navbar-menu-li-submenu-li-anchor" href="#">Social Media</a>
+                </li>
+                <li class="ao-navbar-menu-li-submenu-li">
+                  <a class="ao-navbar-menu-li-submenu-li-anchor" href="#">Old Media</a>
+                </li>
+              </ul>
+            </li>
+            <li class="ao-navbar-menu-li"><a class="ao-navbar-menu-li-anchor" href="#">News</a></li>
+            <li class="ao-navbar-menu-li">
+              <a class="ao-navbar-menu-li-anchor" href="#">Locations</a>
+              <ul class="ao-navbar-menu-li-submenu">
+                <li class="ao-navbar-menu-li-submenu-li">
+                  <a class="ao-navbar-menu-li-submenu-li-anchor" href="#">South</a>
+                </li>
+                <li class="ao-navbar-menu-l-submenu-li">
+                  <a class="ao-navbar-menu-li-submenu-li-anchor" href="#">North</a>
+                </li>
+                <li class="ao-navbar-menu-li-submenu-li">
+                  <a class="ao-navbar-menu-li-submenu-li-anchor" href="#">East</a>
+                </li>
+                <li class="ao-navbar-menu-li-submenu-li">
+                  <a class="ao-navbar-menu-li-submenu-li-anchor" href="#">West</a>
+                </li>
+              </ul>
+            </li>
+            <li class="ao-navbar-menu-li"><a class="ao-navbar-menu-li-anchor" href="#">Stores</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

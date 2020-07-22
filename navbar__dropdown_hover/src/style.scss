@@ -1,0 +1,30 @@
+.ao-navbar {
+  &-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &-li {
+      float: left;
+      width: 100%;
+      text-align: center;
+
+      &-anchor {
+        display: block;
+      }
+
+      &:hover &-submenu {
+        visibility: visible;
+      }
+
+      &-submenu {
+        visibility: hidden;
+        list-style: none;
+
+        &-li-anchor {
+          display: block;
+        }
+      }
+    }
+  }
+}

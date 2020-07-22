@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.as-one-title {
+.ao-title {
   position: relative;
   top: 250px;
   z-index: 1;
@@ -13,7 +13,7 @@
   text-align: center;
   width: 100%;
 }
-.as-one-section {
+.ao-section {
   position: fixed;
   top: 0;
   left: 0;
@@ -23,7 +23,7 @@
   background-attachment: fixed;
   clip-path: circle(0px at center);
 }
-.as-one-container {
+.ao-container {
   position: relative;
   margin-top: 200vh;
   background: #fff;

@@ -1,0 +1,10 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+.ao-progress-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+}
+/*# sourceMappingURL=scroll-progress-bar.min.css.map */

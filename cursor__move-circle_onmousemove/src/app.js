@@ -1,4 +1,4 @@
-let cursor = document.querySelector('.as-one-cursor');
+let cursor = document.querySelector('.ao-cursor');
 document.addEventListener('mousemove', function(e) {
   let x = e.clientX;
   let y = e.clientY;

@@ -1,4 +1,4 @@
-let ball = document.querySelector('.as-one-wrap__ball');
+let ball = document.querySelector('.ao-wrap__ball');
 
 let xMouse, yMouse;
 

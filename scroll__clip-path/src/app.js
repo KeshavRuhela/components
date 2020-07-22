@@ -1,4 +1,4 @@
-let section = document.querySelector('.as-one-section');
+let section = document.querySelector('.ao-section');
 
 window.addEventListener('scroll', function() {
   let value = window.scrollY;
