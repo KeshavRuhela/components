@@ -1,9 +1,13 @@
 .ao-any-hover-show {
-  &:hover &__submenu {
+  &:hover &__menu {
     display: block;
   }
 
-  &__submenu {
+  &__menu {
     display: none;
+
+    &-item-anchor {
+      display: block;
+    }
   }
 }
