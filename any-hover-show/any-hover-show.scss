@@ -1,0 +1,9 @@
+.ao-any-hover-show {
+  &:hover &__submenu {
+    display: block;
+  }
+
+  &__submenu {
+    display: none;
+  }
+}

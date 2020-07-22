@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,kBADgB,AACf,MAAM,CAAE,2BAAS,AAAC,CACjB,OAAO,CAAE,KAAK,CACf,AAEA,AAAD,2BAAU,AAAC,CACT,OAAO,CAAE,IAAI,CACd",
+    "sources": [
+        "any-hover-show.scss"
+    ],
+    "names": [],
+    "file": "any-hover-show.min.css"
+}
