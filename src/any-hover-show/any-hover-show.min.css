@@ -1,2 +1,2 @@
-.ao-any-hover-show:hover .ao-any-hover-show__menu{display:block}.ao-any-hover-show__menu{display:none}.ao-any-hover-show__menu li a{display:block}
+.ao-any-hover-show:hover .ao-any-hover-show__menu{display:block}.ao-any-hover-show__menu{display:none;list-style-type:none;padding:0}.ao-any-hover-show__menu li a{display:block}
 /*# sourceMappingURL=any-hover-show.min.css.map */

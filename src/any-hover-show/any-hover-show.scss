@@ -5,6 +5,8 @@
 
   &__menu {
     display: none;
+    list-style-type: none;
+    padding: 0;
 
     li a {
       display: block;
