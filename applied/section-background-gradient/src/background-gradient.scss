@@ -1,7 +1,7 @@
 .ao-background-gradient {
   width: 100vw;
   height: 100vh;
-  animation: gradient 60s infinite;
+  animation: gradient 1s infinite;
 
   &_linear {
     background: linear-gradient(to top, #008aff, #00ffe7);

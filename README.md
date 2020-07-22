@@ -2,16 +2,15 @@
 
 ## Folder naming
 
-Based on BEM:
-
-- Block: Subject.
-- Element: Verb.
-- Modifier: Object.
+1. Subject
+2. Verb
+3. Object
 
 Example:
 
-- subject\_\_verb_object
-- block-name\_\_element-name_modifier-name
+- subject-verb-object
+- block-name-element-name-modifier-name
+- any-hover-show
 
 ## Folders
 
