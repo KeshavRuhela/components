@@ -2,27 +2,22 @@
 
 ## Folder naming
 
-- Block: element which has the effect. Example: button.
-- Element: effect that happens. Example: ripple.
-- Modifier: action that determines the effect. Example: hover.
+Based on BEM:
 
-### Pattern:
+- Block: Subject.
+- Element: Verb.
+- Modifier: Object.
 
-The folder name follows the BEM standard:
+Example:
 
-1. Block name. Example: block-name
-2. Double underscore. Always: \_\_
-3. Element name. Example: element-name
-4. Single underscore. Always: \_
-5. Modifier name. Example: modifier-name
+- subject\_\_verb_object
+- block-name\_\_element-name_modifier-name
 
-In other words, the folder name would be:
+## Folders
 
-- ./block-name\_\_element-name_modifier-name/
-
-Or, using the component effects vocabulary:
-
-- ./element\_\_effect_action/
+- /applied: effect applied on examples but not ready to production;
+- /src: source of effect ready to production
+- /dist: effect ready to production
 
 ## Listing
 
