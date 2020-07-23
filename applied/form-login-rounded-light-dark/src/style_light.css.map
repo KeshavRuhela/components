@@ -1,9 +1,7 @@
 {
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,kBAAI,CAEZ,AAAA,KAAK,AAAC,CACJ,SAAS,CAAA,QAAC,CACV,YAAY,CAAA,QAAC,CACb,YAAY,CAAA,QAAC,CACb,kBAAkB,CAAA,KAAC,CACnB,aAAa,CAAA,QAAC,CACd,cAAc,CAAA,yEAAC,CACf,cAAc,CAAA,iFAAC,CACf,gBAAgB,CAAA,qEAAC,CAClB",
-    "sources": [
-        "style_light.scss"
-    ],
-    "names": [],
-    "file": "style_light.css"
+"version": 3,
+"mappings": "AAAQ,0BAAkB;AAE1B,KAAM;EACJ,SAAS,CAAC,QAAQ;EAClB,YAAY,CAAC,QAAQ;EACrB,YAAY,CAAC,QAAQ;EACrB,kBAAkB,CAAC,KAAK;EACxB,aAAa,CAAC,QAAQ;EACtB,cAAc,CAAC,yEAAyE;EACxF,cAAc,CAAC,iFAAiF;EAChG,gBAAgB,CAAC,qEAAqE",
+"sources": ["style_light.scss"],
+"names": [],
+"file": "style_light.css"
 }

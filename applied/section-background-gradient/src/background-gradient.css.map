@@ -1,9 +1,7 @@
 {
-    "version": 3,
-    "mappings": "AAAA,AAAA,2BAA2B,CAAC;EAC1B,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,SAAS,EAAE,qBAAqB;CAQjC;;AANE,AAAD,kCAAQ,CAAC;EACP,UAAU,EAAE,yCAAyC;CACtD;;AACA,AAAD,kCAAQ,CAAC;EACP,UAAU,EAAE,iCAAiC;CAC9C;;AAGH,UAAU,CAAV,QAAU;EACR,EAAE;EACF,IAAI;IACF,MAAM,EAAE,gBAAgB;;EAE1B,GAAG;IACD,MAAM,EAAE,kBAAkB",
-    "sources": [
-        "background-gradient.scss"
-    ],
-    "names": [],
-    "file": "background-gradient.css"
+"version": 3,
+"mappings": "AAAA,uBAAwB;EACtB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,SAAS,EAAE,oBAAoB;EAE/B,8BAAS;IACP,UAAU,EAAE,yCAAyC;EAEvD,8BAAS;IACP,UAAU,EAAE,iCAAiC;;AAIjD,mBAQC;EAPC;MACK;IACH,MAAM,EAAE,gBAAgB;EAE1B,GAAI;IACF,MAAM,EAAE,kBAAkB",
+"sources": ["background-gradient.scss"],
+"names": [],
+"file": "background-gradient.css"
 }
