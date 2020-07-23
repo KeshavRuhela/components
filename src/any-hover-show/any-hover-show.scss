@@ -1,15 +1,42 @@
+$child-height: 300px;
+$transition-speed: 0.15s;
+
 .ao-any-hover-show {
-  &:hover &__menu {
-    display: block;
+  $parent: &;
+  position: relative;
+
+  a:hover ~ &__child,
+  &__child:hover {
+    height: $child-height;
   }
 
-  &__menu {
-    display: none;
-    list-style-type: none;
-    padding: 0;
+  &__child {
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+  }
 
-    li a {
-      display: block;
+  &_height {
+    a:hover ~ #{$parent}__child,
+    #{$parent}__child:hover {
+      transition: height $transition-speed;
+    }
+
+    #{$parent}__child {
+      transition: height $transition-speed;
+    }
+  }
+
+  &_opacity {
+    a:hover ~ #{$parent}__child,
+    #{$parent}__child:hover {
+      opacity: 1;
+      transition: height 0.1s, opacity $transition-speed;
+    }
+
+    #{$parent}__child {
+      opacity: 0;
+      transition: height 1s, opacity $transition-speed;
     }
   }
 }
