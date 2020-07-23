@@ -1,0 +1,87 @@
+.navigation ul ul {
+  background-color: #e6056f; /* remove. this is for illustration purposes only */
+  width: 340px; /* you need a width to accommodate tertiary menus */
+
+  position: absolute;
+  z-index: 100;
+
+  height: 0;
+  overflow: hidden;
+
+  -webkit-transition: height 0.3s ease-in;
+  -moz-transition: height 0.3s ease-in;
+  -o-transition: height 0.3s ease-in;
+  -ms-transition: height 0.3s ease-in;
+  transition: height 0.3s ease-in;
+}
+
+/* don't display tertiary box yet */
+.navigation > ul > li:hover ul ul,
+.navigation > ul > li > a:hover ul ul {
+  height: 0;
+}
+/* tertiary drop-down box */
+.navigation ul ul ul {
+  left: 170px;
+  width: 170px;
+}
+
+.navigation > ul > li:hover ul,
+.navigation > ul > li > a:hover ul,
+.navigation ul ul li:hover > ul,
+.navigation ul ul li a:hover > ul {
+  height: 220px; /* need a height to accommodate any tertiary menus */
+}
+
+/* drop-down item styles */
+/* if you want different styling for tertiary menus, just copy the 4 rules below and insert an additional ul: for example: ".navigation ul ul li", becomes: ".navigation ul ul ul li" */
+
+.navigation ul ul li {
+  background-color: #eaeaea; /* grey */
+  width: 170px;
+
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.navigation ul ul li:hover {
+  background-color: #999; /* grey */
+}
+
+.navigation ul ul li a {
+  display: block;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 5px 0;
+  color: #4c4c4c; /* grey */
+}
+.navigation ul ul li a:hover,
+.navigation ul ul li:hover > a {
+  color: #ffffff; /* white */
+}
+
+.navigation ul ul ul li a {
+  border: 0 !important;
+}
+.navigation ul ul ul li + li a {
+  border-top: 1px dotted #999 !important;
+}
+.navigation ul ul li + li a {
+  border-top: 1px dotted #999;
+}
+.navigation ul ul li:hover + li a {
+  border-top: 1px solid #eaeaea;
+}
+.navigation ul ul ul li:hover + li a {
+  border: 0 !important;
+}
+.navigation ul ul ul li:hover + li {
+  border-top: 1px solid #999 !important;
+}
+
+.arrow {
+  background: url(arrow.png) right center no-repeat;
+}
