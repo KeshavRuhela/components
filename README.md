@@ -1,11 +1,25 @@
 # Component Effects
 
+## Installation
+
+```
+$ npm i
+```
+
+## Getting started
+
+The command that must be running to work correctly on this repo is:
+
+```
+$ npm run watch
+```
+
 ## Commands
 
 ```
-$ grunt build       // Build ./src
-$ grunt build-all   // Build ./src and ./applied
-$ grunt watch       // Watch ./src and ./applied
+$ npm run build       // Build ./src
+$ npm run build-all   // Build ./src and ./applied
+$ npm run watch       // Watch ./src and ./applied
 ```
 
 ## Folder naming
@@ -22,9 +36,9 @@ Example:
 
 ## Folders
 
-- /applied: effect applied on examples but not ready to production;
-- /src: source of effect ready to production
-- /dist: effect ready to production
+- /applied: effect applied on examples but not ready for production;
+- /src: source of effect ready for production
+- /dist: effect ready for production
 
 ## Listing
 
