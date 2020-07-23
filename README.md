@@ -17,9 +17,8 @@ $ npm run watch
 ## Commands
 
 ```
-$ npm run build       // Build ./src
-$ npm run build-all   // Build ./src and ./applied
-$ npm run watch       // Watch ./src and ./applied
+$ npm run build
+$ npm run watch
 ```
 
 ## Folder naming

@@ -1,31 +1,47 @@
 .ao-any-hover-show-child {
-  position: relative; }
-  a:hover ~ .ao-any-hover-show-child__child, .ao-any-hover-show-child__child:hover {
-    height: 100px; }
-  .ao-any-hover-show-child__child {
-    position: absolute;
-    overflow: hidden;
-    height: 0; }
-  .ao-any-hover-show-child_height a:hover ~ .ao-any-hover-show-child__child,
-  .ao-any-hover-show-child_height .ao-any-hover-show-child__child:hover {
-    transition: height 0.15s ease-out; }
-  .ao-any-hover-show-child_height .ao-any-hover-show-child__child {
-    transition: height 0.15s ease-out; }
-  .ao-any-hover-show-child_opacity a:hover ~ .ao-any-hover-show-child__child,
-  .ao-any-hover-show-child_opacity .ao-any-hover-show-child__child:hover {
-    opacity: 1;
-    transition: height 0.1s, opacity 0.15s; }
-  .ao-any-hover-show-child_opacity .ao-any-hover-show-child__child {
-    opacity: 0;
-    transition: height 1s, opacity 0.15s; }
-  .ao-any-hover-show-child_down-top a:hover ~ .ao-any-hover-show-child__child,
-  .ao-any-hover-show-child_down-top .ao-any-hover-show-child__child:hover {
-    opacity: 1;
-    transition: height 0.1s, opacity 0.15s, top 0.15s;
-    top: 20px; }
-  .ao-any-hover-show-child_down-top .ao-any-hover-show-child__child {
-    opacity: 0;
-    transition: height 1s, opacity 0.15s, top 0.15s;
-    top: 40px; }
+  position: relative;
+}
 
+a:hover ~ .ao-any-hover-show-child__child, .ao-any-hover-show-child__child:hover {
+  height: 100px;
+}
+
+.ao-any-hover-show-child__child {
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+}
+
+.ao-any-hover-show-child_height a:hover ~ .ao-any-hover-show-child__child,
+.ao-any-hover-show-child_height .ao-any-hover-show-child__child:hover {
+  transition: height 0.15s ease-out;
+}
+
+.ao-any-hover-show-child_height .ao-any-hover-show-child__child {
+  transition: height 0.15s ease-out;
+}
+
+.ao-any-hover-show-child_opacity a:hover ~ .ao-any-hover-show-child__child,
+.ao-any-hover-show-child_opacity .ao-any-hover-show-child__child:hover {
+  opacity: 1;
+  transition: height 0.1s, opacity 0.15s;
+}
+
+.ao-any-hover-show-child_opacity .ao-any-hover-show-child__child {
+  opacity: 0;
+  transition: height 1s, opacity 0.15s;
+}
+
+.ao-any-hover-show-child_down-top a:hover ~ .ao-any-hover-show-child__child,
+.ao-any-hover-show-child_down-top .ao-any-hover-show-child__child:hover {
+  opacity: 1;
+  transition: height 0.1s, opacity 0.15s, top 0.15s;
+  top: 20px;
+}
+
+.ao-any-hover-show-child_down-top .ao-any-hover-show-child__child {
+  opacity: 0;
+  transition: height 1s, opacity 0.15s, top 0.15s;
+  top: 40px;
+}
 /*# sourceMappingURL=any-hover-show-child.css.map */

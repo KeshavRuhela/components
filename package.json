@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "grunt build",
-    "build-all": "grunt build-all",
     "watch": "grunt watch"
   },
   "repository": {

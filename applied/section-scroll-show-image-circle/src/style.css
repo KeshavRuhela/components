@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+}
 
 .ao-title {
   position: relative;
@@ -11,7 +12,8 @@
   z-index: 1;
   font-size: 3em;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+}
 
 .ao-section {
   position: fixed;
@@ -21,15 +23,18 @@
   height: 100vh;
   background: url(./bg.jpg);
   background-attachment: fixed;
-  clip-path: circle(0px at center); }
+  clip-path: circle(0px at center);
+}
 
 .ao-container {
   position: relative;
   margin-top: 200vh;
   background: #fff;
-  padding: 100px; }
-  .ao-container-title {
-    font-size: 2.5em;
-    margin-bottom: 20px; }
+  padding: 100px;
+}
 
+.ao-container-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */

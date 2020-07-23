@@ -1,7 +1,9 @@
 {
-"version": 3,
-"mappings": "AAAQ,0BAAkB;AAE1B,KAAM;EACJ,SAAS,CAAC,QAAQ;EAClB,YAAY,CAAC,QAAQ;EACrB,YAAY,CAAC,QAAQ;EACrB,kBAAkB,CAAC,KAAK;EACxB,aAAa,CAAC,QAAQ;EACtB,cAAc,CAAC,0EAA0E;EACzF,cAAc,CAAC,mFAAmF;EAClG,gBAAgB,CAAC,uEAAuE",
-"sources": ["style_dark.scss"],
-"names": [],
-"file": "style_dark.css"
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,kBAAI;AAEZ,AAAA,KAAK,CAAC;EACJ,SAAS,CAAA,QAAC;EACV,YAAY,CAAA,QAAC;EACb,YAAY,CAAA,QAAC;EACb,kBAAkB,CAAA,KAAC;EACnB,aAAa,CAAA,QAAC;EACd,cAAc,CAAA,0EAAC;EACf,cAAc,CAAA,mFAAC;EACf,gBAAgB,CAAA,uEAAC;CAClB",
+    "sources": [
+        "style_dark.scss"
+    ],
+    "names": [],
+    "file": "style_dark.css"
 }
