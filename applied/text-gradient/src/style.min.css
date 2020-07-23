@@ -1,7 +1,0 @@
-.ao-text-gradient,
-.ao-text-gradient > * {
-  background: linear-gradient(to right, red, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-/*# sourceMappingURL=style.min.css.map */

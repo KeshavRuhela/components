@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,uBAAuB,AAAC,CACtB,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,KAAK,CACb,SAAS,CAAE,oBAAoB,CAQhC,AANE,AAAD,8BAAQ,AAAC,CACP,UAAU,CAAE,yCAAyC,CACtD,AACA,AAAD,8BAAQ,AAAC,CACP,UAAU,CAAE,iCAAiC,CAC9C,AAGH,UAAU,CAAV,QAAU,CACR,EAAE,CACF,IAAI,CACF,MAAM,CAAE,gBAAgB,CAE1B,GAAG,CACD,MAAM,CAAE,kBAAkB",
-    "sources": [
-        "background-gradient.scss"
-    ],
-    "names": [],
-    "file": "background-gradient.min.css"
-}
