@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "grunt sass",
+    "build": "grunt build",
+    "build-all": "grunt build-all",
     "watch": "grunt watch"
   },
   "repository": {
@@ -20,11 +21,15 @@
   "homepage": "https://github.com/as-one/components__effects#readme",
   "dependencies": {
     "@as-one/components__structure": "github:as-one/components__structure",
+    "clean-css-cli": "^4.3.0",
     "grunt": "^1.2.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^3.0.0"
   }
 }

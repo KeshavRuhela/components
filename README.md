@@ -1,5 +1,13 @@
 # Component Effects
 
+## Commands
+
+```
+$ grunt build       // Build ./src
+$ grunt build-all   // Build ./src and ./applied
+$ grunt watch       // Watch ./src and ./applied
+```
+
 ## Folder naming
 
 1. Subject

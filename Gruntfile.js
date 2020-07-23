@@ -4,14 +4,31 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     sass: {
-      dist: {
-        options: {
-          style: 'compressed'
-        },
+      src: {
         files: [{
           expand: true,
           cwd: 'src/',
           src: ['**/*.scss'],
+          dest: 'src/',
+          ext: '.css'
+        }]
+      },
+      applied: {
+        files: [{
+          expand: true,
+          cwd: 'applied/',
+          src: ['**/*.scss'],
+          dest: 'applied/',
+          ext: '.css'
+        }]
+      }
+    },
+    cssmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'src/',
+          src: ['**/*.css', '!*.min.css'],
           dest: 'dist/',
           ext: '.min.css'
         }]
@@ -21,18 +38,24 @@ module.exports = function(grunt) {
       options: {
         cwd: 'src/'
       },
-      scripts: {
+      sass: {
         files: ['**/*.scss'],
         tasks: ['sass'],
+      },
+      cssmin: {
+        files: ['**/*.css', '!*.min.css'],
+        tasks: ['cssmin'],
       }
     }
   });
 
-  // Load the plugin that provides the "uglify" task.
+  // Plugins
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Default task(s).
-  grunt.registerTask('default', ['sass']);
+  // Tasks
+  grunt.registerTask('build', ['sass:src', 'cssmin']);
+  grunt.registerTask('build-all', ['sass', 'cssmin']);
 
 };
