@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/as-one/components__effects#readme",
   "dependencies": {
-    "@as-one/components__structure": "github:as-one/components__structure",
     "clean-css-cli": "^4.3.0",
     "grunt": "^1.2.1",
     "grunt-contrib-sass": "^1.0.0",
