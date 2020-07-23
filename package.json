@@ -19,16 +19,13 @@
     "url": "https://github.com/as-one/components__effects/issues"
   },
   "homepage": "https://github.com/as-one/components__effects#readme",
-  "dependencies": {
-    "clean-css-cli": "^4.3.0",
+  "devDependencies": {
     "grunt": "^1.2.1",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.1.0"
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-contrib-cssmin": "^3.0.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
-  },
-  "devDependencies": {
-    "grunt-contrib-cssmin": "^3.0.0"
   }
 }
