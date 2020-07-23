@@ -41,11 +41,12 @@ module.exports = function(grunt) {
       sass: {
         files: ['**/*.scss'],
         tasks: ['sass'],
-      },
-      cssmin: {
-        files: ['**/*.css', '!*.min.css'],
-        tasks: ['cssmin'],
       }
+      // Doesn't work because it compiles all files every time
+      // ,cssmin: {
+      //   files: ['**/*.css', '!*.min.css'],
+      //   tasks: ['cssmin'],
+      // }
     }
   });
 
