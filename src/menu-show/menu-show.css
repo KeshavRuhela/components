@@ -34,6 +34,9 @@
   .ao-menu-show__list {
     display: flex;
   }
+  .ao-menu-show__list-item-child {
+    position: absolute;
+  }
   .ao-menu-show__md-list {
     display: flex;
     list-style-type: none;
@@ -55,4 +58,4 @@
     height: 100px;
   }
 }
-/*# sourceMappingURL=menu-click-hover-show-child.css.map */
+/*# sourceMappingURL=menu-show.css.map */

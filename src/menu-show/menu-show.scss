@@ -60,6 +60,12 @@ $transition-top: 20px;
   .ao-menu-show {
     &__list {
       display: flex;
+
+      &-item {
+        &-child {
+          position: absolute;
+        }
+      }
     }
 
     &__md-list {
