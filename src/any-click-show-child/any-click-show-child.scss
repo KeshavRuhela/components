@@ -1,0 +1,58 @@
+$child-height: 100px;
+$transition-speed: 0.15s;
+$transition-top: 20px;
+
+.ao-any-click-show-child {
+  $parent: &;
+  position: relative;
+
+  &_open ~ &__child,
+  #{$parent}__child#{$parent}_open {
+    height: $child-height;
+  }
+
+  &__child {
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+  }
+
+  &_height {
+    #{$parent}_open ~ #{$parent}__child,
+    #{$parent}__child#{$parent}_open {
+      transition: height $transition-speed ease-out;
+    }
+
+    #{$parent}__child {
+      transition: height $transition-speed ease-out;
+    }
+  }
+
+  &_opacity {
+    #{$parent}_open ~ #{$parent}__child,
+    #{$parent}__child#{$parent}_open {
+      opacity: 1;
+      transition: height 0.1s, opacity $transition-speed;
+    }
+
+    #{$parent}__child {
+      opacity: 0;
+      transition: height 1s, opacity $transition-speed;
+    }
+  }
+
+  &_down-top {
+    #{$parent}_open ~ #{$parent}__child,
+    #{$parent}__child#{$parent}_open {
+      opacity: 1;
+      transition: height 0.1s, opacity $transition-speed, top $transition-speed;
+      top: $transition-top;
+    }
+
+    #{$parent}__child {
+      opacity: 0;
+      transition: height 1s, opacity $transition-speed, top $transition-speed;
+      top: $transition-top + 20px;
+    }
+  }
+}
