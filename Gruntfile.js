@@ -34,6 +34,17 @@ module.exports = function(grunt) {
         }]
       }
     },
+    uglify: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'src/',
+          src: ['**/*.js'],
+          dest: 'dist/',
+          ext: '.min.js'
+        }]
+      }
+    },
     watch: {
       options: {
         cwd: 'src/'
@@ -53,8 +64,9 @@ module.exports = function(grunt) {
   // Plugins
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify-es');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Tasks
-  grunt.registerTask('build', ['cssmin']);
+  grunt.registerTask('build', ['cssmin', 'uglify']);
 };
