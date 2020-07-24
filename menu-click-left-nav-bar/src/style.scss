@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #333;
+}
+Body {
+  background-image: url(watch.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.ao-menu-hamburger {
+  --duration: .5s;
+  --easing: ease-in-out;
+  position: relative;
+  margin: 20px;
+  width: 220px;
+
+  &.closed &__menu-item-anchor,
+  &.closed &__header {
+    transform: translateY(calc(--top) * -1) scaleY(0.1) scaleX(0.2);
+    transition-delay: var(--delay-in);
+    color: transparent;
+  }
+
+  &.closed &__footer-button {
+    transition-delay: 0s;
+    transform: translateY(0.7) scaleX(0.2);
+  }
+
+  &__header {
+    font-weight: 600;
+    display: block;
+    padding: 1em 1.52em;
+    background: rgba(255, 255, 255, 0.5);
+    transform-origin: 0 0;
+    transition: var(--duration) var(--easing), color var(--duration) var(--easing);
+    border-radius: 4px;
+
+    &-span {
+      padding: 0;
+      font-size: 1.5em;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      line-height: 1;
+      float: right;
+    }
+  }
+
+  &__menu {
+    list-style: none;
+
+    &-item {
+      margin: -4px 0 0 0;
+
+      &-anchor {
+        display: block;
+        padding: 1em 1.52em;
+        text-decoration: none;
+        background-color: white;
+        transform-origin: 0 0;
+        transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
+        transition-delay: var(--delay-out);
+        border-radius: 4px;
+
+        &:hover {
+          background-color: #efefef;
+        }
+      }
+
+      &-sub-menu {
+        font-size: .9em;
+        color: #666666;
+        border-left: 2em solid white;
+        padding: .75em;
+        background: linear-gradient(to right, #dddddd 2px, #ffffff 2px);
+      }
+      &-sub-menu:hover {
+        background: linear-gradient(to right, #dddddd 2px, #efefef 2px);
+      }
+    }
+  }
+  &__footer {
+
+    &-button {
+      position: absolute;
+      padding: calc(1em - 2px);
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform-origin: 0 0;
+      transition: transform var(--duration) var(--easing);
+      transition-delay: calc( var(--duration) + (var(--count) / 2) );
+      border: none;
+      cursor: pointer;
+      outline: none;
+      background-color: #cdcdcd;
+      opacity: 0;
+    }
+  }
+}

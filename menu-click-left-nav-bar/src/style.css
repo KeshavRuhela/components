@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #333;
+}
+
+Body {
+  background-image: url(watch.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ao-menu-hamburger {
+  --duration: .5s;
+  --easing: ease-in-out;
+  position: relative;
+  margin: 20px;
+  width: 220px;
+}
+
+.ao-menu-hamburger.closed .ao-menu-hamburger__menu-item-anchor,
+.ao-menu-hamburger.closed .ao-menu-hamburger__header {
+  transition-delay: var(--delay-in);
+  color: transparent;
+}
+
+.ao-menu-hamburger.closed .ao-menu-hamburger__footer-button {
+  transition-delay: 0s;
+  transform: translateY(0.7) scaleX(0.2);
+}
+
+.ao-menu-hamburger__header {
+  font-weight: 600;
+  display: block;
+  padding: 1em 1.52em;
+  background: rgba(255, 255, 255, 0.5);
+  transform-origin: 0 0;
+  transition: var(--duration) var(--easing), color var(--duration) var(--easing);
+  border-radius: 4px;
+}
+
+.ao-menu-hamburger__header-span {
+  padding: 0;
+  font-size: 1.5em;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  line-height: 1;
+  float: right;
+}
+
+.ao-menu-hamburger__menu {
+  list-style: none;
+}
+
+.ao-menu-hamburger__menu-item {
+  margin: -4px 0 0 0;
+}
+
+.ao-menu-hamburger__menu-item-anchor {
+  display: block;
+  padding: 1em 1.52em;
+  text-decoration: none;
+  background-color: white;
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
+  transition-delay: var(--delay-out);
+  border-radius: 4px;
+}
+
+.ao-menu-hamburger__menu-item-anchor:hover {
+  background-color: #efefef;
+}
+
+.ao-menu-hamburger__menu-item-sub-menu {
+  font-size: .9em;
+  color: #666666;
+  border-left: 2em solid white;
+  padding: .75em;
+  background: linear-gradient(to right, #dddddd 2px, #ffffff 2px);
+}
+
+.ao-menu-hamburger__menu-item-sub-menu:hover {
+  background: linear-gradient(to right, #dddddd 2px, #efefef 2px);
+}
+
+.ao-menu-hamburger__footer-button {
+  position: absolute;
+  padding: calc(1em - 2px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing);
+  transition-delay: calc( var(--duration) + (var(--count) / 2));
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: #cdcdcd;
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */
