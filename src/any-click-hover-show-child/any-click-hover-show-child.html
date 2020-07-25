@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./any-click-hover-show-child.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul style="display: flex;">
+        <li class="ao-any-click-hover-show-child">
+          <a class="ao-any-click-hover-show-child__open" href="#">Submenu Click</a>
+          <ul class="ao-any-click-hover-show-child__child">
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+          </ul>
+        </li>
+        <li class="ao-any-click-hover-show-child">
+          <a class="ao-any-click-hover-show-child__open" href="#">Submenu Click</a>
+          <ul class="ao-any-click-hover-show-child__child">
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul style="display: flex;">
+        <li class="ao-any-click-hover-show-child">
+          <a class="ao-any-click-hover-show-child__open" href="#">Submenu Click</a>
+          <ul class="ao-any-click-hover-show-child__child ao-any-click-hover-show-child__child_md_hover">
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+          </ul>
+        </li>
+        <li class="ao-any-click-hover-show-child">
+          <a class="ao-any-click-hover-show-child__open" href="#">Submenu Click</a>
+          <ul class="ao-any-click-hover-show-child__child ao-any-click-hover-show-child__child_md_hover">
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet lorem ipsum dolor</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <script type="module">
+      import AoMenuShow from './any-click-hover-show-child.js';
+      AoMenuShow();
+    </script>
+  </body>
+</html>
