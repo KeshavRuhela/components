@@ -1,4 +1,4 @@
-function AoMenuShow() {
+function AoAnyClickHoverShowChild() {
 
   let classItem = 'ao-any-click-hover-show-child';
   let classItemOpen = 'ao-any-click-hover-show-child__open';
@@ -25,4 +25,4 @@ function AoMenuShow() {
 
 }
 
-export default AoMenuShow;
+export default AoAnyClickHoverShowChild;
