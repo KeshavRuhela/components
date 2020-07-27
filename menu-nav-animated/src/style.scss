@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.ao-menu{
+  position: relative;
+  display: flex;
+
+  &-marker {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #000;
+    bottom: -8px;
+    transition: 0.5s;
+    border-radius: 4px;
+  }
+
+  &-item {
+    position: relative;
+    margin: 0 20px;
+    font-size: 2em;
+    color: #000;
+    text-decoration: none;
+  }
+}
