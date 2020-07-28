@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.ao-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+
+  &-navbar {
+    position: relative;
+
+    &:hover &-menu &-menu-item {
+      color: #0002;
+    }
+    &-menu:hover &-menu-item:hover {
+      color: #000;
+      background-color: #fff;
+    }
+    & &-menu &-menu-item::before {
+      content: '';
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      font-size: 5em;
+      color: rgba(0, 0, 0, .1);
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 500px;
+      transition: letter-spacing 0.5s, left 0.5s;
+    }
+    & &-menu &-menu-item:hover::before {
+      content: attr(data-text);
+      opacity: 1;
+      left: 50%;
+      letter-spacing: 10px;
+      width: 1800px;
+      height: 1800px;
+    }
+    & &-menu:nth-child(6n+1) &-menu-item::before {
+      background-color: #81ecec;
+    }
+    & &-menu:nth-child(6n+2) &-menu-item::before {
+      background-color: #ff7675;
+    }
+    & &-menu:nth-child(6n+3) &-menu-item::before {
+      background-color: #55efc4;
+    }
+    & &-menu:nth-child(6n+4) &-menu-item::before {
+      background-color: #a29bfe;
+    }
+    & &-menu:nth-child(6n+5) &-menu-item::before {
+      background-color: #fd79a8;
+    }
+    & &-menu:nth-child(6n+6) &-menu-item::before {
+      background-color: #ffeaa7;
+    }
+
+    &-menu {
+      text-align: center;
+      list-style: none;
+
+      &-item {
+        display: inline-flex;
+        padding: 5px 20px;
+        color: #333;
+        font-size: 3em;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.5s;
+      }
+    }
+  }
+}
