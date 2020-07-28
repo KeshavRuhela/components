@@ -101,7 +101,7 @@ body {
 .ao-menu-curtain.active .ao-menu-curtain__toggle {
   background: #fff url(close.png);
   background-repeat: no-repeat;
-  background-position: 5px;
+  background-position: center;
 }
 
 .ao-menu-curtain__toggle {
@@ -112,7 +112,7 @@ body {
   height: 50px;
   background: #fff url(menu.png);
   background-repeat: no-repeat;
-  background-position: 5px;
+  background-position: center;
   z-index: 1000;
   cursor: pointer;
   transition: 0.5s;

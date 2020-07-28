@@ -14,7 +14,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 
   &__layer {
     position: absolute;
@@ -88,10 +89,10 @@ body {
     transition-delay: 0.7s;
   }
 
-  &.active &__toggle{
+  &.active &__toggle {
     background: #fff url(close.png);
     background-repeat: no-repeat;
-    background-position: 5px;
+    background-position: center;
   }
 
   &__toggle {
@@ -102,7 +103,7 @@ body {
     height: 50px;
     background: #fff url(menu.png);
     background-repeat: no-repeat;
-    background-position: 5px;
+    background-position: center;
     z-index: 1000;
     cursor: pointer;
     transition: 0.5s;
