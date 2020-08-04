@@ -1,20 +1,14 @@
 .ao-any-click-hover-show-child__child {
   overflow: hidden;
   height: 0;
-  transition: height 0.15s ease-out;
-}
+  transition: height 0.15s ease-out; }
 
 .ao-any-click-hover-show-child .ao-any-click-hover-show-child__child.ao-any-click-hover-show-child_open {
   height: 100px;
-  transition: height 0.15s;
-}
+  transition: height 0.15s; }
 
 @media (min-width: 768px) {
   .ao-any-click-hover-show-child__child {
-    position: absolute;
-  }
+    position: absolute; }
   .ao-any-click-hover-show-child:hover .ao-any-click-hover-show-child__child_md_hover {
-    height: 100px;
-  }
-}
-/*# sourceMappingURL=any-click-hover-show-child.css.map */
+    height: 100px; } }

@@ -1,48 +1,30 @@
 .ao-any-click-show-child {
-  position: relative;
-}
-
-.ao-any-click-show-child_open ~ .ao-any-click-show-child__child,
-.ao-any-click-show-child .ao-any-click-show-child__child.ao-any-click-show-child_open {
-  height: 100px;
-}
-
-.ao-any-click-show-child__child {
-  position: absolute;
-  overflow: hidden;
-  height: 0;
-}
-
-.ao-any-click-show-child_height .ao-any-click-show-child_open ~ .ao-any-click-show-child__child,
-.ao-any-click-show-child_height .ao-any-click-show-child__child.ao-any-click-show-child_open {
-  transition: height 0.15s ease-out;
-}
-
-.ao-any-click-show-child_height .ao-any-click-show-child__child {
-  transition: height 0.15s ease-out;
-}
-
-.ao-any-click-show-child_opacity .ao-any-click-show-child_open ~ .ao-any-click-show-child__child,
-.ao-any-click-show-child_opacity .ao-any-click-show-child__child.ao-any-click-show-child_open {
-  opacity: 1;
-  transition: height 0.1s, opacity 0.15s;
-}
-
-.ao-any-click-show-child_opacity .ao-any-click-show-child__child {
-  opacity: 0;
-  transition: height 1s, opacity 0.15s;
-}
-
-.ao-any-click-show-child_down-top .ao-any-click-show-child_open ~ .ao-any-click-show-child__child,
-.ao-any-click-show-child_down-top .ao-any-click-show-child__child.ao-any-click-show-child_open {
-  opacity: 1;
-  transition: height 0.1s, opacity 0.15s, top 0.15s;
-  top: 20px;
-}
-
-.ao-any-click-show-child_down-top .ao-any-click-show-child__child {
-  opacity: 0;
-  transition: height 1s, opacity 0.15s, top 0.15s;
-  top: 40px;
-}
-/*# sourceMappingURL=any-click-show-child.css.map */
+  position: relative; }
+  .ao-any-click-show-child_open ~ .ao-any-click-show-child__child,
+  .ao-any-click-show-child .ao-any-click-show-child__child.ao-any-click-show-child_open {
+    height: 100px; }
+  .ao-any-click-show-child__child {
+    position: absolute;
+    overflow: hidden;
+    height: 0; }
+  .ao-any-click-show-child_height .ao-any-click-show-child_open ~ .ao-any-click-show-child__child,
+  .ao-any-click-show-child_height .ao-any-click-show-child__child.ao-any-click-show-child_open {
+    transition: height 0.15s ease-out; }
+  .ao-any-click-show-child_height .ao-any-click-show-child__child {
+    transition: height 0.15s ease-out; }
+  .ao-any-click-show-child_opacity .ao-any-click-show-child_open ~ .ao-any-click-show-child__child,
+  .ao-any-click-show-child_opacity .ao-any-click-show-child__child.ao-any-click-show-child_open {
+    opacity: 1;
+    transition: height 0.1s, opacity 0.15s; }
+  .ao-any-click-show-child_opacity .ao-any-click-show-child__child {
+    opacity: 0;
+    transition: height 1s, opacity 0.15s; }
+  .ao-any-click-show-child_down-top .ao-any-click-show-child_open ~ .ao-any-click-show-child__child,
+  .ao-any-click-show-child_down-top .ao-any-click-show-child__child.ao-any-click-show-child_open {
+    opacity: 1;
+    transition: height 0.1s, opacity 0.15s, top 0.15s;
+    top: 20px; }
+  .ao-any-click-show-child_down-top .ao-any-click-show-child__child {
+    opacity: 0;
+    transition: height 1s, opacity 0.15s, top 0.15s;
+    top: 40px; }

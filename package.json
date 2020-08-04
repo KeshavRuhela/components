@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "grunt build",
-    "watch": "grunt watch"
+    "build": "starter-app-build",
+    "dev": "starter-app-dev"
   },
   "repository": {
     "type": "git",
@@ -18,14 +18,10 @@
     "url": "https://github.com/as-one/components__effects/issues"
   },
   "homepage": "https://github.com/as-one/components__effects#readme",
-  "devDependencies": {
-    "grunt": "^1.2.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-uglify-es": "github:gruntjs/grunt-contrib-uglify#harmony"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "@as-one/starter-app": "github:as-one/starter-app"
   }
 }
