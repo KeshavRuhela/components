@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.ao-fullpage {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.ao-fullpage.active {
+  top: 0;
+}
+
+.ao-fullpage-banner {
+  position: relative;
+  min-width: 600px;
+  height: 100%;
+}
+
+.ao-fullpage-banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ao-fullpage-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.ao-fullpage-nav-navbar {
+  position: relative;
+}
+
+.ao-fullpage-nav-navbar-menu {
+  position: relative;
+  display: table;
+  margin: 5px 0;
+  padding: 0 20px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.ao-fullpage-nav-navbar-menu:hover .ao-fullpage-nav-navbar-menu-item {
+  transform: translateY(-100%);
+  color: #fff;
+}
+
+.ao-fullpage-nav-navbar-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0047;
+  transition: transform 0.5s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.ao-fullpage-nav-navbar-menu:hover::before {
+  transition: transform 0.5s ease-in-out;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.ao-fullpage-nav-navbar-menu-item {
+  position: relative;
+  display: inline-block;
+  padding-top: 12px;
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.ao-fullpage-nav-navbar-menu-item::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  color: #fff;
+}
+
+.ao-menuicon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  background-image: url(./menu.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: 10px;
+  cursor: pointer;
+}
+
+.ao-menuicon.active {
+  background-color: #fff;
+  background-image: url(./close.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .ao-fullpage-banner {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
