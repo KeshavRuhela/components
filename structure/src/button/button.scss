@@ -1,0 +1,134 @@
+@import '../variables';
+
+.btn {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.1s;
+
+  &:hover {
+    transition: 0.1s;
+    filter: brightness(0.8);
+  }
+
+  // Color
+
+  &_primary,
+  &_secondary,
+  &_success,
+  &_danger,
+  &_info,
+  &_dark {
+    color: white;
+  }
+  &_warning,
+  &_light {
+    color: $dark;
+  }
+  &_link {
+    color: $blue;
+  }
+  &_primary {
+    background: $primary;
+  }
+  &_secondary {
+    background: $secondary;
+  }
+  &_success {
+    background: $success;
+  }
+  &_danger {
+    background: $danger;
+  }
+  &_warning {
+    background: $warning;
+  }
+  &_info {
+    background: $info;
+  }
+  &_light {
+    background: $light;
+  }
+  &_dark {
+    background: $dark;
+  }
+
+  &_outline {
+    &_primary,
+    &_secondary,
+    &_success,
+    &_danger,
+    &_info,
+    &_dark,
+    &_warning,
+    &_light,
+    &_link {
+      border-width: 1px;
+      border-style: solid;
+    }
+
+    &_primary {
+      border-color: $primary;
+      color: $primary;
+    }
+    &_secondary {
+      border-color: $secondary;
+      color: $secondary;
+    }
+    &_success {
+      border-color: $success;
+      color: $success;
+    }
+    &_danger {
+      border-color: $danger;
+      color: $danger;
+    }
+    &_warning {
+      border-color: $warning;
+      color: $warning;
+    }
+    &_info {
+      border-color: $info;
+      color: $info;
+    }
+    &_light {
+      border-color: $light;
+      color: $light;
+    }
+    &_dark {
+      border-color: $dark;
+      color: $dark;
+    }
+  }
+
+  &_lg {
+    font-size: 1.125em;
+    padding: 10px 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+  }
+  &_sm {
+    font-size: 0.875em;
+    padding: 10px;
+  }
+  &_block {
+    display: block;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Desktop
+// @media (min-width: 992px) {}

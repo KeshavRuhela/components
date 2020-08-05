@@ -1,0 +1,102 @@
+.ao-modal {
+  $parent: &;
+
+  &__open {
+  }
+
+  &__scope {
+    display: grid;
+    opacity: 0;
+    transition: opacity 0.15s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: default;
+
+    // Close outside modal
+    & > #{$parent}__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    // Modal
+    &-modal {
+      height: fit-content;
+
+      // Sliding
+      &_top-down {
+        position: absolute;
+        top: -100px;
+        transition: top 0.1s;
+      }
+      #{$parent}__scope_open &#{_top-down} {
+        top: 0;
+        transition: top 0.5s;
+      }
+
+      &_bottom-up {
+        position: absolute;
+        bottom: -100px;
+        transition: bottom 0.1s;
+      }
+      #{$parent}__scope_open &#{_bottom-up} {
+        bottom: 0;
+        transition: bottom 0.5s;
+      }
+
+      &_left-right {
+        position: absolute;
+        left: -100px;
+        transition: left 0.1s;
+      }
+      #{$parent}__scope_open &#{_left-right} {
+        left: 0;
+        transition: left 0.5s;
+      }
+
+      &_right-left {
+        position: absolute;
+        right: -100px;
+        transition: right 0.1s;
+      }
+      #{$parent}__scope_open &#{_right-left} {
+        right: 0;
+        transition: right 0.5s;
+      }
+    }
+
+    // Modifiers: Positioning
+    &_center {
+      place-items: center;
+    }
+    &_top {
+      justify-items: center;
+      align-items: top;
+    }
+    &_bottom {
+      justify-items: center;
+      align-items: end;
+    }
+    &_left {
+      justify-items: left;
+      align-items: center;
+    }
+    &_right {
+      justify-items: right;
+      align-items: center;
+    }
+
+    // Modifiers: Visibility
+    &_open {
+      opacity: 1;
+      z-index: 1;
+      transition: opacity 0.15s;
+      cursor: initial;
+    }
+  }
+}

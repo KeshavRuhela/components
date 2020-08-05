@@ -1,0 +1,21 @@
+.heading {
+  font-family: sans-serif;
+}
+
+.heading_size_md {
+  font-size: 18px;
+}
+
+.heading_size_lg {
+  font-size: 24px;
+}
+
+@media (min-width: 992px) {
+  .heading_size_md {
+    font-size: 28px;
+  }
+  .heading_size_lg {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=heading.css.map */

@@ -1,0 +1,14 @@
+.ul-simple {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.ul-simple__li:not(:nth-child(1)) {
+  margin-top: 18px;
+}
+
+.ul-simple__li a {
+  color: black;
+  text-decoration: none;
+}
+/*# sourceMappingURL=ul-simple.css.map */

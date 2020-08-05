@@ -1,0 +1,23 @@
+.heading {
+  font-family: sans-serif;
+
+  &_size_md {
+    font-size: 18px;
+  }
+  &_size_lg {
+    font-size: 24px;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Desktop
+@media (min-width: 992px) {
+  .heading {
+    &_size_md {
+      font-size: 28px;
+    }
+    &_size_lg {
+      font-size: 40px;
+    }
+  }
+}

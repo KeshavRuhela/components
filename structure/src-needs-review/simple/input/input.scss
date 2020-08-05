@@ -1,0 +1,41 @@
+.input {
+  width: max-content;
+  font-family: sans-serif;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--lightGray);
+  
+  &__size_sm,
+  &__size_md {
+    width: 305px;
+    height: 40px;
+    font-size: 12px;
+  }
+  
+  &__color_primary {
+    color: var(--lightGray);
+    // background: black;
+  }
+  &__color_secondary {
+    color: black;
+    background: white;
+  }
+}
+////////////////////////////////////////////////////////////////////////////////
+//Desktop
+@media (min-width: 992px) {
+  .input {
+    
+    &__size_sm {
+      width: 200px;
+      height: 45px;
+      font-size: 15px;
+    }
+  
+    &__size_md {
+      width: 320px;
+      height: 45px;
+      font-size: 15px;
+    }
+  }
+}

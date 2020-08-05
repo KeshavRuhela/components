@@ -1,0 +1,37 @@
+.ul-icon {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.ul-icon__li {
+  color: black;
+  padding-left: 50px;
+  background-repeat: no-repeat;
+  line-height: 25px;
+  background-position-x: 10px;
+  background-position-y: 5px;
+}
+
+.ul-icon__li:not(:nth-child(1)) {
+  margin-top: 23px;
+}
+
+.ul-icon__li_location {
+  background-image: url(./icon-location.svg);
+  background-size: 15px;
+  background-position-x: 13px;
+}
+
+.ul-icon__li_phone {
+  background-image: url(./icon-phone.svg);
+  background-size: 20px;
+}
+
+.ul-icon__li_email {
+  background-image: url(./icon-email.svg);
+  background-size: 22px;
+}
+/*# sourceMappingURL=ul-icon.css.map */

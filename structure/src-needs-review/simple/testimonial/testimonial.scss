@@ -1,0 +1,87 @@
+.card-testimonial {
+  position: relative;
+  width: 280px;
+  height: 170px;
+  margin: 40px 0 0 35px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(lightGrayishBlue);
+
+  &__text {
+    text-align: justify;
+
+    &-paragraph {
+      width: 280px;
+      height: 90px;
+    }
+  }
+
+  &__name {
+    display: flex;
+    margin-left: 60px;
+    font-size: 8px;
+    font-weight: 600;
+    width: 65px;
+  }
+
+  &__role {
+    display: block;
+    margin-left: 60px;
+    font-size: 7px;
+  }
+
+  &__illustration {
+    
+    &-quotes {
+      width: 10px;
+      height: 15px;
+      margin-top: 20px;
+      margin-left: 25px;
+    }
+    &-photo {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      margin-left: 25px;
+      border-radius: 50%;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Desktop
+@media (min-width: 992px) {
+  .card-testimonial {
+    margin: 40px 0 0 20;
+    width: 355px;
+    height: 220px;
+
+    &__text {
+      &-paragraph {
+        width: 355px;
+      }
+    }
+    &__name {
+      margin-left: 75px;
+      margin-top: 20px;
+      font-size: 12px;
+      width: 80px;
+    }
+
+    &__role {
+      margin-left: 75px;
+    }
+
+    &__illustration {
+      &-quotes {
+        margin: 25px 35px 0;
+      }
+      &-photo {
+        width: 35px;
+        height: 35px;
+        margin-top: 20px;
+        margin-left: 35px;
+      }
+    }
+}
+}

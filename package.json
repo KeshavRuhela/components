@@ -1,23 +1,25 @@
 {
-  "name": "@as-one/components__effects",
+  "name": "@as-one/components",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "starter-app-build",
-    "dev": "starter-app-dev"
+    "structure-build": "starter-app-build -i structure/src -o structure/dist",
+    "structure-dev": "starter-app-dev -i structure/src -o structure/dist",
+    "effects-build": "starter-app-build -i effects/src -o effects/dist",
+    "effects-dev": "starter-app-dev -i effects/src -o effects/dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/as-one/components__effects.git"
+    "url": "git+https://github.com/as-one/components.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/as-one/components__effects/issues"
+    "url": "https://github.com/as-one/components/issues"
   },
-  "homepage": "https://github.com/as-one/components__effects#readme",
+  "homepage": "https://github.com/as-one/components#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },

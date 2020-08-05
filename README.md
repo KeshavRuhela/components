@@ -1,4 +1,27 @@
-# Component Effects
+# Components Structure
+
+## Installation
+
+```
+$ npm i
+```
+
+## Getting started
+
+The command that must be running to work correctly on this repo is:
+
+```
+$ npm run watch
+```
+
+## Commands
+
+```
+$ npm run build
+$ npm run watch
+```
+
+# Components Effects
 
 ## Installation
 
@@ -35,9 +58,9 @@ Example:
 
 ## Folders
 
-- /applied: effect applied on examples but not ready for production;
-- /src: source of effect ready for production
-- /dist: effect ready for production
+- effects/applied: effect applied on examples but not ready for production;
+- effects/src: source of effect ready for production
+- effects/dist: effect ready for production
 
 ## Listing
 

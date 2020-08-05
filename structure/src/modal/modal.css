@@ -1,0 +1,65 @@
+.ao-modal__scope {
+  display: grid;
+  opacity: 0;
+  transition: opacity 0.15s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: default; }
+  .ao-modal__scope > .ao-modal__close {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .ao-modal__scope-modal {
+    height: fit-content; }
+    .ao-modal__scope-modal_top-down {
+      position: absolute;
+      top: -100px;
+      transition: top 0.1s; }
+    .ao-modal__scope_open .ao-modal__scope-modal_top-down {
+      top: 0;
+      transition: top 0.5s; }
+    .ao-modal__scope-modal_bottom-up {
+      position: absolute;
+      bottom: -100px;
+      transition: bottom 0.1s; }
+    .ao-modal__scope_open .ao-modal__scope-modal_bottom-up {
+      bottom: 0;
+      transition: bottom 0.5s; }
+    .ao-modal__scope-modal_left-right {
+      position: absolute;
+      left: -100px;
+      transition: left 0.1s; }
+    .ao-modal__scope_open .ao-modal__scope-modal_left-right {
+      left: 0;
+      transition: left 0.5s; }
+    .ao-modal__scope-modal_right-left {
+      position: absolute;
+      right: -100px;
+      transition: right 0.1s; }
+    .ao-modal__scope_open .ao-modal__scope-modal_right-left {
+      right: 0;
+      transition: right 0.5s; }
+  .ao-modal__scope_center {
+    place-items: center; }
+  .ao-modal__scope_top {
+    justify-items: center;
+    align-items: top; }
+  .ao-modal__scope_bottom {
+    justify-items: center;
+    align-items: end; }
+  .ao-modal__scope_left {
+    justify-items: left;
+    align-items: center; }
+  .ao-modal__scope_right {
+    justify-items: right;
+    align-items: center; }
+  .ao-modal__scope_open {
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 0.15s;
+    cursor: initial; }

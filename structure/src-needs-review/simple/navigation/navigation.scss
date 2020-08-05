@@ -1,0 +1,30 @@
+.navigation {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  list-style: none;
+
+  &__menu {
+    &:not(:nth-child(1)) {
+      margin-left: 20px;
+    }
+      color: var(--desaturateBlue);
+      text-decoration: none;
+    
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Desktop
+@media (min-width: 992px) {
+  .navigation {
+    font-size: 17px;
+
+    &__menu {
+      &:not(:nth-child(1)) {
+        margin-left: 55px;
+      }
+    }
+  }
+}

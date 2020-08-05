@@ -1,0 +1,85 @@
+.card-feature {
+  // background-color: white;
+
+  &__text {
+    &-heading {
+      text-align: center;
+      font-weight: 700;
+      margin-top: 60px;
+      font-size: 16px;
+    }
+
+    &-paragraph_one {
+      text-align: justify;
+      margin: 30px 0 0 10px;
+      font-size: 15px;
+    }
+    &-paragraph_two {
+      text-align: center;
+      margin-top: 55px;
+      font-size: 13px;
+      color: var(--moderataCyan);
+      text-decoration: underline;
+      color: var(--moderataCyan);
+      text-decoration-color: var(--moderataCyan);
+
+      &_img {}
+    }
+  }
+
+  &__illustration {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Desktop
+@media (min-width: 992px) {
+  .card-feature {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 40px;
+    
+    &__text {
+      order: 1;
+      position: relative;
+      text-align: left;
+      width: 60%;
+      
+      
+      &-heading {
+        margin-left: 20px;
+        margin-top: 0;
+        text-align: left;
+        font-size: 40px;
+      }
+      &-paragraph_one {
+        margin: 35px 0 0 20px;
+        width: 520px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 25px;
+      }
+      &-paragraph_two {
+        text-align: left;
+        margin: 30px 0 0 20px;
+        font-size: 16px;
+      }
+    }
+    &__testimonial {
+      position: absolute;
+      order: 3;
+      z-index: 1;
+      margin: 285px 0 0 -910px;
+    }
+    &__illustration {
+      order: 2;
+      flex-shrink: 2;
+      margin-left: 40px;
+      width: 40%;
+      height: max-content;
+    }
+  }
+}

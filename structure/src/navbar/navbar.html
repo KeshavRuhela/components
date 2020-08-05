@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .ao-navbar {
+        background-color: beige;
+      }
+      .ao-navbar__menu-list {
+        background-color: burlywood;
+      }
+    </style>
+    <link rel="stylesheet" href="./navbar.css" />
+  </head>
+  <body>
+    <nav class="ao-navbar">
+      <a class="ao-navbar__brand" href="#">Brand</a>
+      <div class="ao-navbar__menu">
+        <button class="ao-navbar__menu-hamburger">Primary</button>
+        <ul class="ao-navbar__menu-list">
+          <li>
+            <a class="ao-navbar__menu-hamburger" href="#">Close</a>
+          </li>
+          <li>
+            <a href="#">Primary</a>
+          </li>
+          <li>
+            <a href="#">Submenu</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="ao-navbar">
+      <a class="ao-navbar__brand" href="#">Brand</a>
+
+      <div class="ao-navbar__menu">
+        <button class="ao-navbar__menu-hamburger">Primary</button>
+        <ul class="ao-navbar__menu-list">
+          <li>
+            <a href="#">Primary</a>
+          </li>
+          <li>
+            <a href="#">Submenu</a>
+          </li>
+          <li>
+            <a class="ao-navbar__menu-hamburger" href="#">Close</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ao-navbar__menu ao-navbar__menu_secondary">
+        <button class="ao-navbar__menu-hamburger">Secondary</button>
+        <ul class="ao-navbar__menu-list">
+          <li>
+            <a href="#">Secondary</a>
+          </li>
+          <li>
+            <a href="#">Submenu</a>
+          </li>
+          <li>
+            <a class="ao-navbar__menu-hamburger" href="#">Close</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr);">
+      <nav class="ao-navbar" style="grid-column: 2 / 3;">
+        <a class="ao-navbar__brand" href="#">Brand</a>
+
+        <div class="ao-navbar__menu">
+          <button class="ao-navbar__menu-hamburger">Primary</button>
+          <ul class="ao-navbar__menu-list">
+            <li>
+              <a href="#">Primary</a>
+            </li>
+            <li>
+              <a href="#">Submenu</a>
+            </li>
+            <li>
+              <a class="ao-navbar__menu-hamburger" href="#">Close</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="ao-navbar__menu ao-navbar__menu_secondary">
+          <button class="ao-navbar__menu-hamburger">Secondary</button>
+          <ul class="ao-navbar__menu-list">
+            <li>
+              <a href="#">Secondary</a>
+            </li>
+            <li>
+              <a href="#">Submenu</a>
+            </li>
+            <li>
+              <a class="ao-navbar__menu-hamburger" href="#">Close</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <script type="module">
+      import AoNavbar from './navbar.js';
+      AoNavbar();
+    </script>
+  </body>
+</html>

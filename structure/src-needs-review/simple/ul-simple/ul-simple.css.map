@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,WAAW,EAAE,UAAU;EACvB,SAAS,EAAE,IAAI;CAWhB;;AATE,AACC,cADG,AACF,IAAK,CAAA,UAAW,CAAA,CAAC,GAAG;EACnB,UAAU,EAAE,IAAI;CACjB;;AAHF,AAIC,cAJG,CAIH,CAAC,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,IAAI;CACtB",
+    "sources": [
+        "ul-simple.scss"
+    ],
+    "names": [],
+    "file": "ul-simple.css"
+}

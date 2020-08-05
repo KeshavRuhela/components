@@ -1,0 +1,32 @@
+.social-media {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 100px;
+  width: max-content;
+  height: max-content;
+}
+
+.social-media__icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: black;
+}
+
+.social-media__icon_facebook {
+  mask-image: url(./facebook-f-brands.svg);
+  mask-size: 10px;
+}
+
+.social-media__icon_twitter {
+  mask-image: url(./twitter-brands.svg);
+  mask-size: 14px;
+}
+
+.social-media__icon_instagram {
+  mask-image: url(./instagram-brands.svg);
+  mask-size: 15px;
+}
+/*# sourceMappingURL=social-media.css.map */

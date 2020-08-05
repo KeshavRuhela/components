@@ -1,0 +1,18 @@
+.ul-simple {
+  font-family: sans-serif;
+  font-size: 18px;
+
+  &__li {
+    &:not(:nth-child(1)) {
+      margin-top: 18px;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Desktop
+// @media (min-width: 992px) {}

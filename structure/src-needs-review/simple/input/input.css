@@ -1,0 +1,36 @@
+.input {
+  width: max-content;
+  font-family: sans-serif;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--lightGray);
+}
+
+.input__size_sm, .input__size_md {
+  width: 305px;
+  height: 40px;
+  font-size: 12px;
+}
+
+.input__color_primary {
+  color: var(--lightGray);
+}
+
+.input__color_secondary {
+  color: black;
+  background: white;
+}
+
+@media (min-width: 992px) {
+  .input__size_sm {
+    width: 200px;
+    height: 45px;
+    font-size: 15px;
+  }
+  .input__size_md {
+    width: 320px;
+    height: 45px;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=input.css.map */

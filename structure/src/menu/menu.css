@@ -1,0 +1,6 @@
+.ao-menu {
+  display: flex;
+  list-style-type: none; }
+  .ao-menu__item {
+    width: 100%;
+    text-align: center; }

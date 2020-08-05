@@ -1,0 +1,39 @@
+.logo {
+  display: inline-block;
+}
+
+.logo_size_sm {
+  width: 85px;
+  height: 26px;
+}
+
+.logo_size_md {
+  width: 180px;
+  height: 53px;
+}
+
+.logo_color_default img {
+  width: 100%;
+}
+
+.logo_color_defined img {
+  width: 100%;
+  height: 100%;
+  mask-position: center;
+  mask-image: url(./logo.svg);
+  mask-size: 99%;
+  mask-repeat: no-repeat;
+  background: black;
+}
+
+@media (min-width: 992px) {
+  .logo_size_sm {
+    width: 169px;
+    height: 50px;
+  }
+  .logo_size_md {
+    width: 180px;
+    height: 55px;
+  }
+}
+/*# sourceMappingURL=logo.css.map */

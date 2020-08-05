@@ -1,0 +1,48 @@
+.logo {
+  $block: &;
+  display: inline-block;
+
+  &_size_sm {
+    width: 85px;
+    height: 26px;
+  }
+
+  &_size_md {
+    width: 180px;
+    height: 53px;
+  }
+
+  &_color_default {
+    img {
+      width: 100%;
+    }
+  }
+
+  &_color_defined {
+    img {
+      width: 100%;
+      height: 100%;
+      mask-position: center;
+      mask-image: url(./logo.svg);
+      mask-size: 99%;
+      mask-repeat: no-repeat;
+      background: black;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Desktop
+@media (min-width: 992px) {
+  .logo {
+    &_size_sm {
+      width: 169px;
+      height: 50px;
+    }
+
+    &_size_md {
+      width: 180px;
+      height: 55px;
+    }
+  }
+}

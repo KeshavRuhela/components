@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Form Controls</h1>
+
+      <div class="form-group">
+        <label for="input-1">Input 1</label>
+        <input type="text" name="input-1" id="input-1" placeholder="input 1" />
+      </div>
+      <div class="form-group">
+        <label for="select-2">Select 2</label>
+        <select name="select-2" id="select-2">
+          <option value="one">One</option>
+          <option value="two">Two</option>
+          <option value="three">Three</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="textarea-3">Textarea 3</label>
+        <textarea name="textarea-3" id="textarea-3" cols="30" rows="10"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="input-file-4">Input File 4</label>
+        <input type="file" id="input-file-4" />
+      </div>
+
+      <h1>Sizing</h1>
+
+      <input type="text" class="form-control form-control-lg" name="input-5" id="input-5" placeholder="input lg" />
+      <input type="text" class="form-control form-control-sm" name="input-6" id="input-6" placeholder="input sm" />
+      <select name="select-7" id="select-2" class="form-control form-control-lg">
+        <option value="one">Select lg</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+      </select>
+      <select name="select-8" id="select-2" class="form-control form-control-sm">
+        <option value="one">Select sm</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+      </select>
+
+      <h1>Readonly</h1>
+
+      <input type="text" class="form-control" name="input-9" id="input-9" placeholder="Readonly" readonly />
+      <input type="text" class="form-control-plaintext" name="input-10" id="input-10" placeholder="Readonly" readonly />
+
+      <h1>Range Inputs</h1>
+
+      <div class="form-group">
+        <label for="range-input-11">Range Input 11</label>
+        <input type="range" name="range-input-11" id="range-input-11" />
+      </div>
+      <input type="range" class="form-control" name="range-input-12" id="range-input-12" />
+
+      <h1>Checkboxes and radios</h1>
+
+      <div class="form-check">
+        <input type="checkbox" id="checkbox-13" value="" />
+        <label for="checkbox-13">Checkbox 13</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="checkbox-14" value="" disabled />
+        <label for="checkbox-14">Checkbox 14</label>
+      </div>
+
+      <div class="form-check">
+        <input type="radio" id="radio-15" value="" />
+        <label for="radio-15">Radio 15</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" id="radio-16" value="" disabled />
+        <label for="radio-16">Radio 16</label>
+      </div>
+
+      <div class="form-check-inline">
+        <input type="checkbox" id="checkbox-17" value="" />
+        <label for="checkbox-17">Checkbox 17</label>
+      </div>
+      <div class="form-check-inline">
+        <input type="checkbox" id="checkbox-18" value="" />
+        <label for="checkbox-18">Checkbox 18</label>
+      </div>
+      <div class="form-check-inline">
+        <input type="checkbox" id="checkbox-19" value="" />
+        <label for="checkbox-19">Checkbox 19</label>
+      </div>
+
+      <div class="form-check-inline">
+        <input type="radio" id="radio-20" value="" />
+        <label for="radio-20">Radio 20</label>
+      </div>
+      <div class="form-check-inline">
+        <input type="radio" id="radio-21" value="" />
+        <label for="radio-21">Radio 21</label>
+      </div>
+      <div class="form-check-inline">
+        <input type="radio" id="radio-22" value="" />
+        <label for="radio-22">Radio 22</label>
+      </div>
+
+      <h1>Label sizes</h1>
+
+      <div class="form-group">
+        <label for="input-23" class="form-label-lg">Input 1</label>
+        <input type="text" name="input-23" id="input-23" placeholder="input 23" />
+      </div>
+      <div class="form-group">
+        <label for="input-24" class="form-label-sm">Input 1</label>
+        <input type="text" name="input-24" id="input-24" placeholder="input 24" />
+      </div>
+    </form>
+
+    <h1>Form Inline</h1>
+
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="input-25">Input 25</label>
+        <input type="text" name="input-25" id="input-25" placeholder="input 25" />
+      </div>
+      <div class="form-group">
+        <label for="select-26">Select 26</label>
+        <select name="select-26" id="select-26">
+          <option value="one">One</option>
+          <option value="two">Two</option>
+          <option value="three">Three</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="input-file-27">Input File 27</label>
+        <input type="file" id="input-file-27" />
+      </div>
+    </form>
+
+    <h1>Help text</h1>
+
+    <div class="form-group">
+      <label for="input-1">Input 1</label>
+      <input type="text" name="input-1" id="input-1" placeholder="input 1" />
+      <small>Help text</small>
+    </div>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="input-25">Input 25</label>
+        <input type="text" name="input-25" id="input-25" placeholder="input 25" />
+        <small>Help text</small>
+      </div>
+    </form>
+
+    <h1>Disabled form</h1>
+
+    <form>
+      <fieldset disabled>
+        <div class="form-group">
+          <label for="input-25">Input 25</label>
+          <input type="text" name="input-25" id="input-25" placeholder="input 25" />
+        </div>
+        <div class="form-group">
+          <label for="select-26">Select 26</label>
+          <select name="select-26" id="select-26">
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option value="three">Three</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="input-file-27">Input File 27</label>
+          <input type="file" id="input-file-27" />
+        </div>
+      </fieldset>
+    </form>
+
+    <h1>Validation (needs form.js)</h1>
+
+    <h2>Not validated</h2>
+    <form class="needs-validation">
+      <div class="form-group">
+        <label for="input-1">Input 1</label>
+        <input type="text" name="input-1" id="input-1" placeholder="input 1" valid />
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please try again.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="input-1">Input 1</label>
+        <input type="text" name="input-1" id="input-1" placeholder="input 1" invalid />
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please try again.
+        </div>
+      </div>
+    </form>
+
+    <form class="needs-validation was-validated">
+      <h2>Was validated</h2>
+      <div class="form-group">
+        <label for="input-1">Input 1</label>
+        <input type="text" class="is-valid" name="input-1" id="input-1" placeholder="input 1" />
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please try again.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="input-1">Input 1</label>
+        <input type="text" class="is-invalid" name="input-1" id="input-1" placeholder="input 1" />
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please try again.
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

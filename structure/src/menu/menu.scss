@@ -1,0 +1,11 @@
+$__item_text-align: center;
+
+.ao-menu {
+  display: flex;
+  list-style-type: none;
+
+  &__item {
+    width: 100%;
+    text-align: $__item_text-align;
+  }
+}

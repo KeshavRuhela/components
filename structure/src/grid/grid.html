@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header,
+      section,
+      footer,
+      nav,
+      img,
+      div {
+        border: 1px solid;
+      }
+
+      .container-fluid {
+        background: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header container-fluid">
+      <div class="menu container">
+        <div class="row">
+          <img class="col-6" alt="Logo" />
+          <nav class="col-6">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="headline container">
+      <div class="row">
+        <div class="col-12 col-sm-6">col</div>
+        <div class="col-12 col-sm-6">col</div>
+      </div>
+    </section>
+
+    <section class="cards container">
+      <div class="row">
+        <div class="col-12 col-sm-4">card</div>
+        <div class="col-12 col-sm-4">card</div>
+        <div class="col-12 col-sm-4">card</div>
+      </div>
+    </section>
+
+    <footer class="footer container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">c</div>
+          <div class="col-12 col-sm-6 col-md-3">c</div>
+          <div class="col-12 col-sm-6 col-md-3">c</div>
+          <div class="col-12 col-sm-6 col-md-3">c</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
