@@ -36,7 +36,7 @@
         transform: translateX(-50%);
         background-color: yellowgreen;
         opacity: 0;
-        text-replace: 0.5s;
+        transition: 0.5s;
         border-radius: 50%;
       }
       &:hover::before {
