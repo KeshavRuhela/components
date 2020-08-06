@@ -37,7 +37,7 @@ body > :not(.container),
   min-width: 41.66665%;
 }
 .row .col-6 {
-  min-width: 49.99998%;
+  min-width: 46.99998%;
 }
 .row .col-7 {
   min-width: 58.33331%;
@@ -73,7 +73,7 @@ body > :not(.container),
   margin-left: 41.66665%;
 }
 .row .col-offset-6 {
-  margin-left: 49.99998%;
+  margin-left: 46.99998%;
 }
 .row .col-offset-7 {
   margin-left: 58.33331%;
@@ -111,7 +111,7 @@ body > :not(.container),
     min-width: 41.66665%;
   }
   .row .col-sm-6 {
-    min-width: 49.99998%;
+    min-width: 46.99998%;
   }
   .row .col-sm-7 {
     min-width: 58.33331%;
@@ -147,7 +147,7 @@ body > :not(.container),
     margin-left: 41.66665%;
   }
   .row .col-sm-offset-6 {
-    margin-left: 49.99998%;
+    margin-left: 46.99998%;
   }
   .row .col-sm-offset-7 {
     margin-left: 58.33331%;
@@ -186,7 +186,7 @@ body > :not(.container),
     min-width: 41.66665%;
   }
   .row .col-md-6 {
-    min-width: 49.99998%;
+    min-width: 46.99998%;
   }
   .row .col-md-7 {
     min-width: 58.33331%;
@@ -222,7 +222,7 @@ body > :not(.container),
     margin-left: 41.66665%;
   }
   .row .col-md-offset-6 {
-    margin-left: 49.99998%;
+    margin-left: 46.99998%;
   }
   .row .col-md-offset-7 {
     margin-left: 58.33331%;
@@ -261,7 +261,7 @@ body > :not(.container),
     min-width: 41.66665%;
   }
   .row .col-lg-6 {
-    min-width: 49.99998%;
+    min-width: 46.99998%;
   }
   .row .col-lg-7 {
     min-width: 58.33331%;
@@ -297,7 +297,7 @@ body > :not(.container),
     margin-left: 41.66665%;
   }
   .row .col-lg-offset-6 {
-    margin-left: 49.99998%;
+    margin-left: 46.99998%;
   }
   .row .col-lg-offset-7 {
     margin-left: 58.33331%;
@@ -336,7 +336,7 @@ body > :not(.container),
     min-width: 41.66665%;
   }
   .row .col-xl-6 {
-    min-width: 49.99998%;
+    min-width: 46.99998%;
   }
   .row .col-xl-7 {
     min-width: 58.33331%;
@@ -372,7 +372,7 @@ body > :not(.container),
     margin-left: 41.66665%;
   }
   .row .col-xl-offset-6 {
-    margin-left: 49.99998%;
+    margin-left: 46.99998%;
   }
   .row .col-xl-offset-7 {
     margin-left: 58.33331%;
