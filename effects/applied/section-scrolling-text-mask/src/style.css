@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ao-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.ao-section:nth-child(1) .ao-section-content-title {
+  background-image: url(bg1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.ao-section:nth-child(2) .ao-section-content-title {
+  background-image: url(bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.ao-section:nth-child(3) .ao-section-content-title {
+  background-image: url(bg3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.ao-section-content {
+  text-align: center;
+}
+
+.ao-section-content-title {
+  font-size: 24vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+}
+
+.ao-section-content-paragraph {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.ao-section-content-anchor {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */
