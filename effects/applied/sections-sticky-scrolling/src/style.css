@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 
-.ao-main-slide {
+.ao-main__slide {
   position: sticky;
   display: flex;
   justify-content: center;
@@ -24,19 +24,19 @@ body {
   box-shadow: 0 10px 50px #000;
 }
 
-.ao-main-slide.slide1 {
+.ao-main__slide_slide1 {
   background-image: url(./bg1.jpg);
 }
 
-.ao-main-slide.slide2 {
+.ao-main__slide_slide2 {
   background-image: url(./bg2.jpg);
 }
 
-.ao-main-slide.slide3 {
+.ao-main__slide_slide3 {
   background-image: url(./bg3.jpg);
 }
 
-.ao-main-title {
+.ao-main__title {
   font-size: 500%;
   text-shadow: 0 10px 50px #000;
 }
