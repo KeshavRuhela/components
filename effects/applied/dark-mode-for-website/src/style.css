@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ao-input[type="checkbox"] {
+  position: fixed;
+  z-index: 1;
+  top: 40px;
+  right: 100px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.ao-input[type="checkbox"]::before {
+  content: 'Dark';
+  position: absolute;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #000;
+}
+
+.ao-input[type="checkbox"]:checked ~ * {
+  filter: invert(1);
+}
+
+.ao-input[type="checkbox"]:checked::before {
+  content: 'Light';
+  color: #000;
+  background-color: #fff;
+}
+
+.ao-section {
+  position: absolute;
+  padding: 80px 100px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.ao-section__paragraph-1 {
+  margin-top: 30px;
+}
+
+.ao-section__img {
+  margin: 10px 20px 10px 0;
+  max-width: 500px;
+  float: left;
+  filter: inherit;
+}
+/*# sourceMappingURL=style.css.map */
