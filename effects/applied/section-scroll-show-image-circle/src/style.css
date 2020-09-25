@@ -22,6 +22,7 @@
   width: 100%;
   height: 100vh;
   background: url(./bg.jpg);
+  background-size: cover;
   background-attachment: fixed;
   clip-path: circle(0px at center);
 }
