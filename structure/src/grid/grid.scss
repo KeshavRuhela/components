@@ -1,203 +1,227 @@
-$_1: 8.33333%;
-$_2: 16.66666%;
-$_3: 24.99999%;
-$_4: 33.33332%;
-$_5: 41.66665%;
-$_6: 49.99998%;
-$_7: 58.33331%;
-$_8: 66.66664%;
-$_9: 74.99997%;
-$_10: 83.33333%;
-$_11: 91.66663%;
+$_1: 8.333333%;
+$_2: 16.666667%;
+$_3: 25%;
+$_4: 33.333333%;
+$_5: 41.666667%;
+$_6: 50%;
+$_7: 58.333333%;
+$_8: 66.666667%;
+$_9: 75%;
+$_10: 83.333333%;
+$_11: 91.666667%;
 $_12: 100%;
 
-// div {
-//   border: 1px solid;
-// }
-
-// Extra small devices (portrait phones, less than 576px)
-// No media query necessary since this is the default
-
-body,
+.container,
 .container-fluid {
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-  grid-template-rows: max-content;
-
-  & .container-fluid {
-    grid-column: 1 / 4;
-  }
-
-  .container {
-    grid-column: 2 / 3;
-  }
-
-  & > :not(.container) {
-    grid-column: 1 / 4;
-  }
+  width: $_12;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .row {
   display: flex;
+  flex: 1 0 100%;
   flex-wrap: wrap;
+}
 
-  .col- {
-    &1 {
-      min-width: $_1;
-    }
-    &2 {
-      min-width: $_2;
-    }
-    &3 {
-      min-width: $_3;
-    }
-    &4 {
-      min-width: $_4;
-    }
-    &5 {
-      min-width: $_5;
-    }
-    &6 {
-      min-width: $_6;
-    }
-    &7 {
-      min-width: $_7;
-    }
-    &8 {
-      min-width: $_8;
-    }
-    &9 {
-      min-width: $_9;
-    }
-    &10 {
-      min-width: $_10;
-    }
-    &11 {
-      min-width: $_11;
-    }
-    &12 {
-      min-width: $_12;
-    }
+.row > * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
 
-    &offset- {
-      &1 {
-        margin-left: $_1;
-      }
-      &2 {
-        margin-left: $_2;
-      }
-      &3 {
-        margin-left: $_3;
-      }
-      &4 {
-        margin-left: $_4;
-      }
-      &5 {
-        margin-left: $_5;
-      }
-      &6 {
-        margin-left: $_6;
-      }
-      &7 {
-        margin-left: $_7;
-      }
-      &8 {
-        margin-left: $_8;
-      }
-      &9 {
-        margin-left: $_9;
-      }
-      &10 {
-        margin-left: $_10;
-      }
-      &11 {
-        margin-left: $_11;
-      }
-      &12 {
-        margin-left: $_12;
-      }
-    }
+.col {
+  flex: 1 0 0%;
+
+  &-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  &-1 {
+    flex: 0 0 auto;
+    width: $_1;
+  }
+  &-2 {
+    flex: 0 0 auto;
+    width: $_2;
+  }
+  &-3 {
+    flex: 0 0 auto;
+    width: $_3;
+  }
+  &-4 {
+    flex: 0 0 auto;
+    width: $_4;
+  }
+  &-5 {
+    flex: 0 0 auto;
+    width: $_5;
+  }
+  &-6 {
+    flex: 0 0 auto;
+    width: $_6;
+  }
+  &-7 {
+    flex: 0 0 auto;
+    width: $_7;
+  }
+  &-8 {
+    flex: 0 0 auto;
+    width: $_8;
+  }
+  &-9 {
+    flex: 0 0 auto;
+    width: $_9;
+  }
+  &-10 {
+    flex: 0 0 auto;
+    width: $_10;
+  }
+  &-11 {
+    flex: 0 0 auto;
+    width: $_11;
+  }
+  &-12 {
+    flex: 0 0 auto;
+    width: $_12;
+  }
+}
+
+.offset {
+  &-1 {
+    margin-left: $_1;
+  }
+  &-2 {
+    margin-left: $_2;
+  }
+  &-3 {
+    margin-left: $_3;
+  }
+  &-4 {
+    margin-left: $_4;
+  }
+  &-5 {
+    margin-left: $_5;
+  }
+  &-6 {
+    margin-left: $_6;
+  }
+  &-7 {
+    margin-left: $_7;
+  }
+  &-8 {
+    margin-left: $_8;
+  }
+  &-9 {
+    margin-left: $_9;
+  }
+  &-10 {
+    margin-left: $_10;
+  }
+  &-11 {
+    margin-left: $_11;
   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .row .col-sm- {
-    &1 {
-      min-width: $_1;
-    }
-    &2 {
-      min-width: $_2;
-    }
-    &3 {
-      min-width: $_3;
-    }
-    &4 {
-      min-width: $_4;
-    }
-    &5 {
-      min-width: $_5;
-    }
-    &6 {
-      min-width: $_6;
-    }
-    &7 {
-      min-width: $_7;
-    }
-    &8 {
-      min-width: $_8;
-    }
-    &9 {
-      min-width: $_9;
-    }
-    &10 {
-      min-width: $_10;
-    }
-    &11 {
-      min-width: $_11;
-    }
-    &12 {
-      min-width: $_12;
-    }
+  .container {
+    max-width: 540px;
+  }
+  .col-sm {
+    flex: 1 0 0%;
 
-    &offset- {
-      &1 {
-        margin-left: $_1;
-      }
-      &2 {
-        margin-left: $_2;
-      }
-      &3 {
-        margin-left: $_3;
-      }
-      &4 {
-        margin-left: $_4;
-      }
-      &5 {
-        margin-left: $_5;
-      }
-      &6 {
-        margin-left: $_6;
-      }
-      &7 {
-        margin-left: $_7;
-      }
-      &8 {
-        margin-left: $_8;
-      }
-      &9 {
-        margin-left: $_9;
-      }
-      &10 {
-        margin-left: $_10;
-      }
-      &11 {
-        margin-left: $_11;
-      }
-      &12 {
-        margin-left: $_12;
-      }
+    &-auto {
+      flex: 0 0 auto;
+      width: auto;
+    }
+    &-1 {
+      flex: 0 0 auto;
+      width: $_1;
+    }
+    &-2 {
+      flex: 0 0 auto;
+      width: $_2;
+    }
+    &-3 {
+      flex: 0 0 auto;
+      width: $_3;
+    }
+    &-4 {
+      flex: 0 0 auto;
+      width: $_4;
+    }
+    &-5 {
+      flex: 0 0 auto;
+      width: $_5;
+    }
+    &-6 {
+      flex: 0 0 auto;
+      width: $_6;
+    }
+    &-7 {
+      flex: 0 0 auto;
+      width: $_7;
+    }
+    &-8 {
+      flex: 0 0 auto;
+      width: $_8;
+    }
+    &-9 {
+      flex: 0 0 auto;
+      width: $_9;
+    }
+    &-10 {
+      flex: 0 0 auto;
+      width: $_10;
+    }
+    &-11 {
+      flex: 0 0 auto;
+      width: $_11;
+    }
+    &-12 {
+      flex: 0 0 auto;
+      width: $_12;
+    }
+  }
+  .offset-sm {
+    &-0 {
+      margin-left: 0;
+    }
+    &-1 {
+      margin-left: $_1;
+    }
+    &-2 {
+      margin-left: $_2;
+    }
+    &-3 {
+      margin-left: $_3;
+    }
+    &-4 {
+      margin-left: $_4;
+    }
+    &-5 {
+      margin-left: $_5;
+    }
+    &-6 {
+      margin-left: $_6;
+    }
+    &-7 {
+      margin-left: $_7;
+    }
+    &-8 {
+      margin-left: $_8;
+    }
+    &-9 {
+      margin-left: $_9;
+    }
+    &-10 {
+      margin-left: $_10;
+    }
+    &-11 {
+      margin-left: $_11;
     }
   }
 }
@@ -205,81 +229,101 @@ body,
 ////////////////////////////////////////////////////////////////////////////////
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .row .col-md- {
-    &1 {
-      min-width: $_1;
-    }
-    &2 {
-      min-width: $_2;
-    }
-    &3 {
-      min-width: $_3;
-    }
-    &4 {
-      min-width: $_4;
-    }
-    &5 {
-      min-width: $_5;
-    }
-    &6 {
-      min-width: $_6;
-    }
-    &7 {
-      min-width: $_7;
-    }
-    &8 {
-      min-width: $_8;
-    }
-    &9 {
-      min-width: $_9;
-    }
-    &10 {
-      min-width: $_10;
-    }
-    &11 {
-      min-width: $_11;
-    }
-    &12 {
-      min-width: $_12;
-    }
+  .container {
+    max-width: 720px;
+  }
+  .col-md {
+    flex: 1 0 0%;
 
-    &offset- {
-      &1 {
-        margin-left: $_1;
-      }
-      &2 {
-        margin-left: $_2;
-      }
-      &3 {
-        margin-left: $_3;
-      }
-      &4 {
-        margin-left: $_4;
-      }
-      &5 {
-        margin-left: $_5;
-      }
-      &6 {
-        margin-left: $_6;
-      }
-      &7 {
-        margin-left: $_7;
-      }
-      &8 {
-        margin-left: $_8;
-      }
-      &9 {
-        margin-left: $_9;
-      }
-      &10 {
-        margin-left: $_10;
-      }
-      &11 {
-        margin-left: $_11;
-      }
-      &12 {
-        margin-left: $_12;
-      }
+    &-auto {
+      flex: 0 0 auto;
+      width: auto;
+    }
+    &-1 {
+      flex: 0 0 auto;
+      width: $_1;
+    }
+    &-2 {
+      flex: 0 0 auto;
+      width: $_2;
+    }
+    &-3 {
+      flex: 0 0 auto;
+      width: $_3;
+    }
+    &-4 {
+      flex: 0 0 auto;
+      width: $_4;
+    }
+    &-5 {
+      flex: 0 0 auto;
+      width: $_5;
+    }
+    &-6 {
+      flex: 0 0 auto;
+      width: $_6;
+    }
+    &-7 {
+      flex: 0 0 auto;
+      width: $_7;
+    }
+    &-8 {
+      flex: 0 0 auto;
+      width: $_8;
+    }
+    &-9 {
+      flex: 0 0 auto;
+      width: $_9;
+    }
+    &-10 {
+      flex: 0 0 auto;
+      width: $_10;
+    }
+    &-11 {
+      flex: 0 0 auto;
+      width: $_11;
+    }
+    &-12 {
+      flex: 0 0 auto;
+      width: $_12;
+    }
+  }
+  .offset-md {
+    &-0 {
+      margin-left: 0;
+    }
+    &-1 {
+      margin-left: $_1;
+    }
+    &-2 {
+      margin-left: $_2;
+    }
+    &-3 {
+      margin-left: $_3;
+    }
+    &-4 {
+      margin-left: $_4;
+    }
+    &-5 {
+      margin-left: $_5;
+    }
+    &-6 {
+      margin-left: $_6;
+    }
+    &-7 {
+      margin-left: $_7;
+    }
+    &-8 {
+      margin-left: $_8;
+    }
+    &-9 {
+      margin-left: $_9;
+    }
+    &-10 {
+      margin-left: $_10;
+    }
+    &-11 {
+      margin-left: $_11;
     }
   }
 }
@@ -287,163 +331,305 @@ body,
 ////////////////////////////////////////////////////////////////////////////////
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .row .col-lg- {
-    &1 {
-      min-width: $_1;
-    }
-    &2 {
-      min-width: $_2;
-    }
-    &3 {
-      min-width: $_3;
-    }
-    &4 {
-      min-width: $_4;
-    }
-    &5 {
-      min-width: $_5;
-    }
-    &6 {
-      min-width: $_6;
-    }
-    &7 {
-      min-width: $_7;
-    }
-    &8 {
-      min-width: $_8;
-    }
-    &9 {
-      min-width: $_9;
-    }
-    &10 {
-      min-width: $_10;
-    }
-    &11 {
-      min-width: $_11;
-    }
-    &12 {
-      min-width: $_12;
-    }
+  .container {
+    max-width: 960px;
+  }
+  .col-lg {
+    flex: 1 0 0%;
 
-    &offset- {
-      &1 {
-        margin-left: $_1;
-      }
-      &2 {
-        margin-left: $_2;
-      }
-      &3 {
-        margin-left: $_3;
-      }
-      &4 {
-        margin-left: $_4;
-      }
-      &5 {
-        margin-left: $_5;
-      }
-      &6 {
-        margin-left: $_6;
-      }
-      &7 {
-        margin-left: $_7;
-      }
-      &8 {
-        margin-left: $_8;
-      }
-      &9 {
-        margin-left: $_9;
-      }
-      &10 {
-        margin-left: $_10;
-      }
-      &11 {
-        margin-left: $_11;
-      }
-      &12 {
-        margin-left: $_12;
-      }
+    &-auto {
+      flex: 0 0 auto;
+      width: auto;
+    }
+    &-1 {
+      flex: 0 0 auto;
+      width: $_1;
+    }
+    &-2 {
+      flex: 0 0 auto;
+      width: $_2;
+    }
+    &-3 {
+      flex: 0 0 auto;
+      width: $_3;
+    }
+    &-4 {
+      flex: 0 0 auto;
+      width: $_4;
+    }
+    &-5 {
+      flex: 0 0 auto;
+      width: $_5;
+    }
+    &-6 {
+      flex: 0 0 auto;
+      width: $_6;
+    }
+    &-7 {
+      flex: 0 0 auto;
+      width: $_7;
+    }
+    &-8 {
+      flex: 0 0 auto;
+      width: $_8;
+    }
+    &-9 {
+      flex: 0 0 auto;
+      width: $_9;
+    }
+    &-10 {
+      flex: 0 0 auto;
+      width: $_10;
+    }
+    &-11 {
+      flex: 0 0 auto;
+      width: $_11;
+    }
+    &-12 {
+      flex: 0 0 auto;
+      width: $_12;
+    }
+  }
+  .offset-lg {
+    &-0 {
+      margin-left: 0;
+    }
+    &-1 {
+      margin-left: $_1;
+    }
+    &-2 {
+      margin-left: $_2;
+    }
+    &-3 {
+      margin-left: $_3;
+    }
+    &-4 {
+      margin-left: $_4;
+    }
+    &-5 {
+      margin-left: $_5;
+    }
+    &-6 {
+      margin-left: $_6;
+    }
+    &-7 {
+      margin-left: $_7;
+    }
+    &-8 {
+      margin-left: $_8;
+    }
+    &-9 {
+      margin-left: $_9;
+    }
+    &-10 {
+      margin-left: $_10;
+    }
+    &-11 {
+      margin-left: $_11;
     }
   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-// Extra large devices (large desktops, 1200px and up)
+// Extra large devices (large desktops and up)
 @media (min-width: 1200px) {
-  .row .col-xl- {
-    &1 {
-      min-width: $_1;
-    }
-    &2 {
-      min-width: $_2;
-    }
-    &3 {
-      min-width: $_3;
-    }
-    &4 {
-      min-width: $_4;
-    }
-    &5 {
-      min-width: $_5;
-    }
-    &6 {
-      min-width: $_6;
-    }
-    &7 {
-      min-width: $_7;
-    }
-    &8 {
-      min-width: $_8;
-    }
-    &9 {
-      min-width: $_9;
-    }
-    &10 {
-      min-width: $_10;
-    }
-    &11 {
-      min-width: $_11;
-    }
-    &12 {
-      min-width: $_12;
-    }
+  .container {
+    max-width: 1140px;
+  }
+  .col-xl {
+    flex: 1 0 0%;
 
-    &offset- {
-      &1 {
-        margin-left: $_1;
-      }
-      &2 {
-        margin-left: $_2;
-      }
-      &3 {
-        margin-left: $_3;
-      }
-      &4 {
-        margin-left: $_4;
-      }
-      &5 {
-        margin-left: $_5;
-      }
-      &6 {
-        margin-left: $_6;
-      }
-      &7 {
-        margin-left: $_7;
-      }
-      &8 {
-        margin-left: $_8;
-      }
-      &9 {
-        margin-left: $_9;
-      }
-      &10 {
-        margin-left: $_10;
-      }
-      &11 {
-        margin-left: $_11;
-      }
-      &12 {
-        margin-left: $_12;
-      }
+    &-auto {
+      flex: 0 0 auto;
+      width: auto;
+    }
+    &-1 {
+      flex: 0 0 auto;
+      width: $_1;
+    }
+    &-2 {
+      flex: 0 0 auto;
+      width: $_2;
+    }
+    &-3 {
+      flex: 0 0 auto;
+      width: $_3;
+    }
+    &-4 {
+      flex: 0 0 auto;
+      width: $_4;
+    }
+    &-5 {
+      flex: 0 0 auto;
+      width: $_5;
+    }
+    &-6 {
+      flex: 0 0 auto;
+      width: $_6;
+    }
+    &-7 {
+      flex: 0 0 auto;
+      width: $_7;
+    }
+    &-8 {
+      flex: 0 0 auto;
+      width: $_8;
+    }
+    &-9 {
+      flex: 0 0 auto;
+      width: $_9;
+    }
+    &-10 {
+      flex: 0 0 auto;
+      width: $_10;
+    }
+    &-11 {
+      flex: 0 0 auto;
+      width: $_11;
+    }
+    &-12 {
+      flex: 0 0 auto;
+      width: $_12;
+    }
+  }
+  .offset-xl {
+    &-0 {
+      margin-left: 0;
+    }
+    &-1 {
+      margin-left: $_1;
+    }
+    &-2 {
+      margin-left: $_2;
+    }
+    &-3 {
+      margin-left: $_3;
+    }
+    &-4 {
+      margin-left: $_4;
+    }
+    &-5 {
+      margin-left: $_5;
+    }
+    &-6 {
+      margin-left: $_6;
+    }
+    &-7 {
+      margin-left: $_7;
+    }
+    &-8 {
+      margin-left: $_8;
+    }
+    &-9 {
+      margin-left: $_9;
+    }
+    &-10 {
+      margin-left: $_10;
+    }
+    &-11 {
+      margin-left: $_11;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Extra extra large devices (large desktops and up)
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  .col-xxl {
+    flex: 1 0 0%;
+
+    &-auto {
+      flex: 0 0 auto;
+      width: auto;
+    }
+    &-1 {
+      flex: 0 0 auto;
+      width: $_1;
+    }
+    &-2 {
+      flex: 0 0 auto;
+      width: $_2;
+    }
+    &-3 {
+      flex: 0 0 auto;
+      width: $_3;
+    }
+    &-4 {
+      flex: 0 0 auto;
+      width: $_4;
+    }
+    &-5 {
+      flex: 0 0 auto;
+      width: $_5;
+    }
+    &-6 {
+      flex: 0 0 auto;
+      width: $_6;
+    }
+    &-7 {
+      flex: 0 0 auto;
+      width: $_7;
+    }
+    &-8 {
+      flex: 0 0 auto;
+      width: $_8;
+    }
+    &-9 {
+      flex: 0 0 auto;
+      width: $_9;
+    }
+    &-10 {
+      flex: 0 0 auto;
+      width: $_10;
+    }
+    &-11 {
+      flex: 0 0 auto;
+      width: $_11;
+    }
+    &-12 {
+      flex: 0 0 auto;
+      width: $_12;
+    }
+  }
+  .offset-xxl {
+    &-0 {
+      margin-left: 0;
+    }
+    &-1 {
+      margin-left: $_1;
+    }
+    &-2 {
+      margin-left: $_2;
+    }
+    &-3 {
+      margin-left: $_3;
+    }
+    &-4 {
+      margin-left: $_4;
+    }
+    &-5 {
+      margin-left: $_5;
+    }
+    &-6 {
+      margin-left: $_6;
+    }
+    &-7 {
+      margin-left: $_7;
+    }
+    &-8 {
+      margin-left: $_8;
+    }
+    &-9 {
+      margin-left: $_9;
+    }
+    &-10 {
+      margin-left: $_10;
+    }
+    &-11 {
+      margin-left: $_11;
     }
   }
 }
