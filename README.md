@@ -6,7 +6,7 @@
 $ npm i
 ```
 
-## Getting started
+## Now Started
 
 The command that must be running to work correctly on this repo is:
 
